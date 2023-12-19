@@ -2,7 +2,6 @@
     font-family: TagBoyHardCore;
     src: url(TagBoyHardcore/TagBoyHardcore.ttf);
 }
-
 body {
     box-sizing: border-box;
     background-color: #26425a ;
@@ -13,51 +12,88 @@ body {
     border: solid;
 }*/
 
-.header, .navigation{
-    display: grid;
-   
-}
-.header {
-    grid-template-columns: auto auto auto auto ;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    place-items: right;
-    z-index: 1;
-    
-}
-
-.navigation {
-    background-color: #000939;
-    padding: 10px;
-    
-    
-    
-}
-.synatyc {
-    border-right: solid;
-}
-.synatyc h1{
-    font-weight: normal;
-    font-family:TagboyHardCore;
-    color: #04ffff;
-}
-.synatyc a{
-    color: inherit;
-    text-decoration: none;
-}
-.Home, .Profile, .Data {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #efefef;
-    justify-content: right;
-    
-}
-.Home h1 a, .Profile h1 a, .Data h1 a {
-    text-decoration: none;
-    font-weight: normal;
-    color: inherit;
-}
+@media only screen and (min-width:600px){
+    .header, .navigation{
+        display: grid;
+       
+    }
+    .header {
+        grid-template-columns: auto auto auto auto ;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        place-items: right;
+        z-index: 1;
+        
+        
+    }
+    .Home, .Profile, .Data {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #efefef;
+        justify-content: right;
+        
+    }
+    }
+    .navigation {
+        background-color: #000939;
+        padding: 10px;
+    }
+    .synatyc h1{
+        font-weight: normal;
+        font-family:TagboyHardCore;
+        color: #04ffff;
+    }
+    .synatyc a{
+        color: inherit;
+        text-decoration: none;
+    }
+    .Home h1 a, .Profile h1 a, .Data h1 a {
+        text-decoration: none;
+        font-weight: normal;
+        color: inherit;
+    }
+    @media only screen and (max-width:600px){
+        .header, .navigation{
+            display: grid;
+        }
+       
+        .header .synatyc{
+            grid-template-columns: auto  ;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            background-color: #000939;
+        }
+        .synatyc{
+            grid-row-start: 1;
+            text-align: center;
+            
+        }
+        .Home{
+            grid-row-start: 2;
+            margin-top: 80px;
+           
+        }
+        .Profile {
+            grid-row-start: 3;
+        }
+        .Data{
+            grid-row-start: 4;
+        }
+        .Home, .Profile, .Data {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #efefef;
+            text-align: center;
+            width: 100%;       
+    }
+    .navigation {
+        background-color:#0a0931;
+        padding: 10px;
+    }
+    }
 
 .content {
     position: relative;
