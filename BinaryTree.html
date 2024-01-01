@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+    
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1">Tree</h1>
+                <blockquote class="blockquote">
+                    <p>Binary Tree (Pohon Biner) yaitu pohon yang setiap simpul/node-nya paling banyak mempunyai dua buah subpohon.</p>
+                  </blockquote>
+                </div>
+            </div>
+            <p  class="lead">Tree merupakan struktur hirarkis dari sebuah susunan data. Dalam tree,kita mempunyai sebuah Root yang nantinya akan menjadi awal dari tree tersebut. Untuk tree, kita juga membutuhkan struct. Ada banyak jenis-jenis Tree, tapi yang akan kita pelajari saat ini adalah implementasi dari Binary Tree, yaitu Tree yang hanya memiliki 2 tangan.</p>
+            <p  class="lead">Tree merupakan salah satu bentuk struktur data tidak linear yang menggambarkan hubungan yang bersifat hirarkis (hubungan one to many) antara elemen-elemen. Tree bisa didefinisikan sebagai kumpulan simpul/node dengan satu elemen khusus yang disebut Root dan node lainnya. Tree juga adalah suatu graph yang acyclic, simple, connected yang tidak mengandung loop.</p>
+            <p  class="lead">Sebuah binary search tree (bst) adalah sebuah pohon biner yang boleh kosong, dan setiap nodenya harus memiliki identifier/value. Value pada semua node subpohon sebelah kiiri adalah selalu lebih kecil dari value dari root, sedangkan value subpohon di sebelah kanan adalah sama atau lebih besar dari value pada root, masing-masing subpohon tersebut (kiri dan kanan) itu sendiri adalah juga binary search tree.</p>
+            <p  class="lead">Struktur data bst sangat penting dalam struktur pencarian, misalkan dalam kasus pencarian dalam sebuah list, jika list sudah dalam keadaan terurut maka proses pencarian akan semakin cepat, jika kita menggunakan list contigue dan melakukan pencarian biner,akan tetapi jika kita ingin melakukan perubahan isi list (insert atau delete), menggunakan list contigue akan sangat lambat, karena prose insert dan delete dalam list contigue butuh memindahkan linked-list, yang untuk operasi insert atau delete tinggal mengatur- atur pointer,akan tetapi pada n-linked list, kita tidak bisa melakukan pointer sembarangan setiap saat, kecuali hanya satu kali dengan kata lain hanya secara squential.</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Binary Tree</h2>
+                </div>
+            </div>
+            <p  class="lead">Binary Tree merupakan salah satu bentuk struktur data tidak linear yang menggambarkanhubungan yang bersifat hirarkis (hubungan one to many) antara elemen-elemen. Tree bisa didefinisikan sebagai kumpulan simpul/node dengan satu elemen khusus yang disebut Root dan node lainnya ( disebut subtree).</p>
+            <p  class="lead">Dalam tree terdapat jenis-jenis tree yang memiliki sifat khusus, diantaranya adalah binary tree.</p>
+            <p  class="lead">Binary tree adalah suatu tree dengan syarat bahawa tiap node (simpul) hanya boleh memiliki maksimal dua subtree dan kedua subtree tersebut harus terpisah. Tiap node dalam binary treee boleh memiliki paling banyak dua child (anak simpul), secara khusus anaknya dinamakan kiri dan kanan.</p>
+            <p  class="lead">Binary Tree merupakan himpunan vertex-vertex yang terdiri dari 2 subtree (dengan disjoint) yaitu subtree kiri dan subtree kanan. Setiap vertex dalam binary tree mempunyai derajat keluar max = 2.</p>
+            <img src="gambar/gambarTree/gambarBinaryTree.PNG" class="img-fluid" alt="gambar binaryTree">
+            <p  class="lead">Sebuah pohon biner adalah grafik asiklis yang terhubung dimana setiap tingkatan dari susut tidak lebih dari 3. Ini dapat ditunjukkan bahwa dalam pohon biner manapun, terdapat persis dua atau lebih simpul dengan tingkat satu daripada yang terdapat dengan tingkat tiga, tetapi bisa terdapat angka apa saja dari simpul dengan tingkat dua. Sebuah pohon biner berakar merupakan sebuah grafik yang mempunyai satu dari sudutnya dengan tingkat tidak lebih dari dua sebagai akar.</p>
+            <p  class="lead">Dengan akar yang dipilih, setiap sudut akan memiliki ayah khusus, dan diatas dua anak bagaimanapun juga, sejauh ini terdapat keterbatasan informasi untuk membedakan antara anak kiri atau kanan. Jika kita membuang keperluan yang tak terkoneksi, membolehkan bermacam koneksi dalam komponen di grafik, kita memanggil struktur sebuah hutan.</p>
+                <ul class="list-unstyled">
+                    <li>Sebuah jalan lain untuk mendefinisikan pohon biner melalui definisi rekursif pada grafik langsung. Sebuah pohon biner dapat berarti :</li>
+                    <ul>
+                        <li>Sebuah sudut tunggal.</li>
+                        <li>Sebuah graf yang dibentuk dengan mengambil dua pohon biner, menambahkan sebuah sudut, dan menambahkan sebuah panah langsung dari sudut yang baru ke akar dai setiap pohon biner.</li>
+                    </ul>
+                </ul>
+            <p class="lead">Pohon biner dapat dikontruksi dari bahasa pemrogaraman primitif dalam berbagai cara. Dalam bahasa yang menggunakan records dan referensi. Pohon biner secara khas dikontruksi dengan mengambil sebuah struktur simpul pohon yang memuat beberapa data dan referensi ke anak kiri dan anak kanan.</p>
+            <p class="lead">Kadang-kadang itu juga memuat sebuah referensi ke ayahnya yang khas. Jika sebuah simpul mempunyai kurang dari dua anak, beberapa penunjuk anak diaatur kedalam nilai nol khusus atau kesebuah simpul sentinel.</p>
+            <p class="lead">Pohon biner dapat juga disimpan sebagai struktur data implisit dalam array, dan jika pohon tersebut merupakan sebuah pohon biner lengkap, metode ini tidak boros tempat. Dalam penyusunan yang rapat ini, jika sebuah simpul memiliki indeks i, anaknya dapat ditemukan pada indeks ke-2i+1 dan 2i+2, meskipun ayahnya (jika ada) ditemukan pada indeks lantai ((i-1)/2) (asumsikan akarnya memiliki indeks kosong). Metode ini menguntungkan dari banyak penyimpanan yang rapat dan memiliki referensi lokal yang lebih baik, teristimewa selama sebuah preordeer traversal.</p>        
+            <ol><p class="lead">Istilah-istilah dalam pohon :</p>
+                <li class="lead">
+                    <p class="lead">Predessor. Node yang berada diatas node tertentu.</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Successor. Node yang berada dibawah node tertentu.</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Ancestor. Seluruh node yang terletak sebelum node tertentu dan terletak pada jalur yang sama.</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Descendant. Seluruh node yang terletak sesudah node tertentu dan terletak pada jalur yang sama.</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Parent. Predesesor satu level diatas satu node</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Child. Succesor satu level dibawah satu node</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Sibling. Node yang memiliki parent yang sama dengan satu node</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">SubTree Bagian dari tree yang berupa suatu node beserta descendant-nya</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Size. Banyaknya node dalam suatu tree </p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Height. Banyaknya tingkat/level dalam suatu tree </p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Root, Node khusus dalam tree yang tidak memiliki predesesor</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Leaf. Node-node dalam tree yang tidak memiliki daun</p>
+                </li>
+                <li class="lead">
+                    <p class="lead">Degree. Banyaknya child yang dimiliki oleh suatu node</p>
+                </li>
+            </ol>
+            <ul>
+                <li class="lead">Istilah pada Pohon Binner
+                    <ol>
+                        <li class="lead">Pohon Biner Penuh (Full Binary Tree)
+                            <p class="lead">Semua simpul (kecuali daun) memiliki 2 anak dan tiap cabang memiliki panjang ruas yang sama.</p>
+                            <img src="gambar/gambarTree/FullBinaryTree.PNG" class="img-fluid" alt="gambar FullBinaryTree">
+                        </li>
+                        <li class="lead">Pohon Biner Lengkap (Complete Binary Tree)
+                            <p class="lead">Hampir sama dengan Pohon BinerPenuh, semua simpul (kecualidaun) memiliki 2 anak tetapi tiap cabang memiliki panjang ruas berbeda.</p>
+                            <img src="gambar/gambarTree/CompleteBinaryTree.PNG" class="img-fluid" alt="gambar CompleteBinaryTree">
+                        </li>
+                        <li class="lead">Pohon Biner Similer
+                            <p class="lead">Dua pohon yang memiliki struktur yang sama tetapi informasinya berbeda.</p>
+                            <img src="gambar/gambarTree/PohonBinerSimiler.PNG" class="img-fluid" alt="gambar SimilerBinaryTree">
+                        </li>
+                        <li class="lead">Pohon Biner Ekivalent
+                            <p class="lead">Dua pohon yang memiliki struktur dan informasi yangsama.</p>
+                            <img src="gambar/gambarTree/PohonbinerEkivalent.PNG" class="img-fluid" alt="gambar EkivalentBinaryTree">
+                        </li>
+                        <li class="lead">Pohon Biner Miring (Skewed Tree)
+                            <p class="lead">Dua pohon yang semua simpulnya mempunyai satu anak / turunan kecuali daun.</p>
+                            <img src="gambar/gambarTree/SkiwedBinaryTree.PNG" class="img-fluid" alt="gambar SkiwedBinaryTree">
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <ul>
+                <li class="lead">Sifat Utama Pohon berakar:
+                    <ol>
+                        <li>Jika Pohon mempunyai Simpul sebanyak n, maka banyaknya ruas atau edge adalah (n-1).</li>
+                        <li>Mempunyai Simpul Khusus yang disebut Root, jika Simpul tersebut memiliki derajat keluar >= 0, dan derajat masuk = 0.</li>
+                        <li>Mempunyai Simpul yang disebut sebagai Daun / Leaf, jika Simpul tersebut berderajat keluar = 0, dan berderajat masuk = 1.</li>
+                        <li>Setiap Simpul mempunyai Tingkatan / Level yang dimulai dari Root yang Levelnya = 1 sampai dengan Level ke - n pada daun paling bawah. Simpul yang mempunyai Level sama disebut Bersaudara atau Brother atau Stribling.</li>
+                        <li>Pohon mempunyai Ketinggian atau Kedalaman atau Height, yang merupakan Level tertinggi</li>
+                        <li>Pohon mempunyai Weight atau Berat atau Bobot, yang banyaknya daun (leaf) pada Pohon.</li>
+                        <li>Banyaknya Simpul Maksimum sampai Level N adalah :</li>
+                        <img src="gambar/gambarTree/Ilustrasi.PNG" class="img-fluid" alt="gambar Ilustrasi">
+                        <li>Banyaknya Simpul untuk setiap Level I adalah :                        </li>
+                        <img src="gambar/gambarTree/Ilustasi1.PNG" class="img-fluid" alt="gambar Ilustrasi1">
+
+                    </ol>
+                </li>
+            </ul>
+            <h2 class="lead">kunjungan pada pohon biner</h2>
+            <p>Kunjungan pohon biner terbagi menjadi 3 bentuk binary tree </p>
+            <ol>
+                <li class="lead">Kunjungan secara preorder ( Depth First Order), mempunyai urutan :
+                    <ul>
+                        <li>Cetak isi simpul yang dikunjungi ( simpul akar ),</li>
+                        <li>Kunjungi cabang kiri,</li>
+                        <li>Kunjungi cabang kanan .</li>
+                        <img src="gambar/gambarTree/DFO.PNG" class="img-fluid" alt="gambar DFO">
+                    </ul>
+                </li>
+                <li class="lead">Kunjungan secara inorder ( symetric order), mempunyai urutan :
+                    <ul>
+                        <li class="lead">Kunjungi cabang kiri</li>
+                        <li class="lead">Cetak isi simpul yang dikunjungi (simpul akar)</li>
+                        <li class="lead">Kunjungi cabang kanan .</li>
+                        <img src="gambar/gambarTree/SO.PNG" class="img-fluid" alt="gambar SO">
+                    </ul>
+                </li>
+                <li class="lead">Kunjungan secara postorder, mempunyai urutan :
+                    <ul>
+                        <li class="lead">Kunjungi cabang kiri</li>
+                        <li class="lead">Kunjungi cabang kanan</li>
+                        <li class="lead">Cetak isi simpul yang dikunjungi ( simpul akar )</li>
+                        <img src="gambar/gambarTree/PO.PNG" class="img-fluid" alt="gambar PO">
+                    </ul>
+                </li>
+            </ol>
+       
+    </section>
+    
+
+
+   <script src="boostarp/js/bootstrap.min.js"></script> 
+</body>
+</html>
