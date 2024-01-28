@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1">ARRAY</h1>
+                <blockquote class="blockquote">
+                    <p> Dalam pemrograman komputer, sebuah "array" adalah struktur data yang digunakan untuk menyimpan sekumpulan elemen data dengan tipe yang sama. Elemen-elemen tersebut disimpan secara berurutan di dalam array, dan setiap elemen dapat diakses menggunakan indeks atau posisinya dalam array.</p>
+                  </blockquote>
+                </div>
+            </div>
+            <ul>
+                <p class="lead">Segala macam metode yang ada pasti memiliki ciri-ciri termasuk algoritma. Berdasarkan apa yang diungkapkan Donald E. Knuth, algoritma memiliki beberapa ciri, yaitu:</p>
+                <li class="lead"> Tipe Data yang Sama:
+                    <p class="lead"> Semua elemen dalam array memiliki tipe data yang sama, yang dapat berupa tipe data dasar seperti integer, float, atau tipe data yang lebih kompleks seperti string atau objek kustom.</p>
+                </li>
+                <li class="lead"> Indeks:
+                    <p class="lead"> Setiap elemen dalam array dapat diidentifikasi dengan menggunakan indeks atau nomor posisi. Indeks dimulai dari 0 (nol) untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya.</p>
+                </li>
+                <li class="lead">Ukuran Tetap:
+                    <p class="lead">Ukuran array, yaitu jumlah elemen yang dapat disimpan di dalamnya, ditentukan pada saat deklarasi dan biasanya bersifat tetap selama eksekusi program.</p>
+                </li>
+                
+            </ul>
+            <img src="gambar/array/array.PNG" class="img-fluid" alt="gambar binaryTree">
+            <p class="lead">Penggunaan array memudahkan pengelolaan dan manipulasi data yang berjumlah banyak, karena memungkinkan akses dan pengolahan data secara terstruktur dengan menggunakan indeks.</p>
+            <ul>
+                <p class="lead">Dalam konteks array, istilah "elemen terurut" dan "elemen homogen" mengacu pada dua karakteristik utama:</p>
+                <li class="lead"> Elemen Terurut (Ordered Elements):
+                    <p class="lead">Definisi: Elemen-elemen dalam array disimpan atau diakses secara berurutan berdasarkan posisi atau indeksnya.</p>
+                    <p class="lead">Contoh: Jika kita memiliki array [10, 20, 30, 40], elemen-elemen tersebut disusun secara terurut. Elemen pertama memiliki indeks 0, yang diikuti oleh elemen dengan indeks 1, 2, dan seterusnya.</p>
+                </li>
+                <li class="lead"> Elemen Homogen (Homogeneous Elements):
+                    <p class="lead">Definisi: Semua elemen dalam array memiliki tipe data yang sama.</p>
+                    <p class="lead">Dalam array [5, 10, 15, 20], semua elemen memiliki tipe data integer. Dalam array ["apel", "jeruk", "mangga"], semua elemen memiliki tipe data string. Ini menunjukkan homogenitas tipe data.</p>
+                </li>
+                
+            </ul>
+            <p class="lead">Kombinasi elemen terurut dan homogen dalam array membuat struktur data ini efisien dan memungkinkan akses yang mudah. Saat kita tahu tipe data yang diharapkan dan urutan elemennya, kita dapat dengan cepat mengakses atau memanipulasi data dalam array menggunakan indeks.</p>
+            <img src="gambar/array/array 1.PNG" class="img-fluid" alt="gambar binaryTree">
+            <p class="lead">Dalam semua contoh ini, elemen-elemen array disusun secara terurut dan memiliki tipe data yang sama, yaitu integer.</p>
+            <ul>
+                <p class="lead">Array adalah struktur data yang memiliki beberapa karakteristik khas. Berikut adalah beberapa karakteristik umum dari array:</p>
+                <li class="lead">Tipe Data yang Sama:
+                    <p class="lead">Semua elemen dalam array memiliki tipe data yang sama. Ini berarti, misalnya, jika sebuah array berisi angka bulat, setiap elemen di dalamnya adalah angka bulat.</p>
+                </li>
+                <li class="lead"> Indeks:
+                    <p class="lead">Elemen-elemen dalam array diakses menggunakan indeks atau nomor posisi. Indeks biasanya dimulai dari 0 (nol) dan berlanjut secara berurutan.</p>
+                
+                </li>
+                <li class="lead">Ukuran Tetap:
+                    <p class="lead">Ukuran array, yaitu jumlah elemen yang dapat disimpan di dalamnya, ditentukan pada saat deklarasi dan umumnya bersifat tetap selama eksekusi program.</p>
+                </li>
+                <li class="lead">Contiguous Memory Allocation:
+                    <p class="lead">Elemen-elemen array disimpan secara berurutan di dalam memori komputer. Ini memungkinkan akses yang cepat dan efisien ke elemen array menggunakan indeks.</p>
+                </li>
+                <li class="lead">Kecepatan Akses:
+                    <p class="lead">Karena elemen-elemen array disusun secara terurut dan diakses menggunakan indeks, akses ke elemen array biasanya memiliki kompleksitas waktu O(1), yang artinya dapat diakses dalam waktu konstan.</p>
+                </li>
+                <li class="lead">Elemen Terurut:
+                    <p class="lead">Elemen-elemen array disimpan dan diakses secara berurutan berdasarkan indeksnya. Artinya, elemen pertama diikuti oleh elemen kedua, elemen ketiga, dan seterusnya.</p>
+                </li>
+                <li class="lead">Penggunaan Operator Indeks:
+                    <p class="lead">Elemen-elemen array diakses atau dimanipulasi menggunakan operator indeks. Contohnya, array[0] merujuk pada elemen pertama dalam array.</p>
+                </li>
+                <li class="lead">Homogenitas Elemen:
+                    <p class="lead">Semua elemen dalam array memiliki tipe data yang sama. Meskipun ada array yang dapat menyimpan elemen dengan tipe data berbeda, konsep homogenitas biasanya lebih umum</p>
+                </li>
+                <li class="lead">Dapat Digunakan untuk Penyimpanan Data Terstruktur:
+                    <p class="lead">Array dapat digunakan untuk menyimpan data terstruktur, seperti matriks (array dua dimensi) atau struktur data yang lebih kompleks.</p>
+                </li>
+                <li class="lead">Pemakaian Memori yang Efisien:
+                    <p class="lead">Array memungkinkan penggunaan memori yang efisien karena elemen-elemen disimpan secara kontigu dalam memori.</p>
+                </li>
+                
+            </ul>
+            <p class="lead">Karena elemen-elemen array disusun secara terurut dan diakses menggunakan indeks, akses ke elemen array biasanya memiliki kompleksitas waktu O(1), yang artinya dapat diakses dalam waktu konstan.</p>
+            <ul>
+                <li class="lead">Tipe Data Array:
+                    <p class="lead">Definisi: Tipe data array merujuk pada jenis nilai yang dapat disimpan dalam elemen-elemen array. Ini mencakup tipe data dasar seperti integer, float, karakter, atau tipe data yang lebih kompleks seperti string atau objek.</p>
+                    <p class="lead">Contoh: Dalam array berisi angka bulat, tipe datanya adalah integer. Dalam array berisi nama-nama, tipe datanya adalah string.</p>
+                </li>
+                <li class="lead">Nama Variabel Array:
+                    <p class="lead">Definisi: Nama variabel array adalah identifikasi atau label yang diberikan pada array. Nama ini digunakan untuk merujuk kepada seluruh kumpulan elemen array.</p>
+                    <p class="lead">Contoh: Jika kita memiliki array angka, kita dapat memberinya nama variabel seperti angka. Dalam hal ini, angka adalah nama variabel array</p>
+                </li>
+                <li class="lead">Subskrip/Indeks Array:
+                    <p class="lead">Definisi: Subskrip atau indeks array digunakan untuk mengakses elemen-elemen array secara individu. Indeks array dimulai dari 0 (nol) dan berlanjut secara berurutan hingga jumlah elemen minus satu.</p>
+                    <p class="lead">Contoh: Dalam array angka, angka[0] merujuk pada elemen pertama, angka[1] pada elemen kedua, dan seterusnya. Dengan kata lain, angka[i] merujuk pada elemen ke-i dalam array.</p>
+                </li>
+            </ul>
+            <img src="gambar/array/array 2.PNG" class="img-fluid" alt="gambar binaryTree">
+
+            <p class="lead">Dalam contoh ini, angka adalah nama variabel array dengan tipe data integer. Subskrip/indeks digunakan untuk mengakses elemen-elemen array secara individu.</p>
+            <ul>Ada beberapa jenis array yang umum digunakan dalam pemrograman, dan setiap jenis memiliki penggunaan yang spesifik. Berikut adalah beberapa jenis array beserta penjelasannya:
+                <li class="lead">Array Satu Dimensi:
+                    <p class="lead">Pengertian: Array satu dimensi adalah kumpulan elemen dengan tipe data yang sama yang disusun dalam satu baris atau satu kolom</p>
+                    <p class="lead">Contoh: int angka[5] = {1, 2, 3, 4, 5};</p>
+                </li>
+                <li class="lead">Array Dua Dimensi (Matriks):
+                    <p class="lead">Pengertian: Array dua dimensi adalah kumpulan elemen yang disusun dalam bentuk tabel dua dimensi (baris dan kolom), mirip dengan matriks matematika.</p>
+                    <p class="lead">Contoh: int matriks[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};</p>
+                </li>
+                <li class="lead">Array Multidimensi (Lebih dari Dua Dimensi):
+                    <p class="lead">Pengertian: Array multidimensi adalah kumpulan elemen dengan tipe data yang sama yang disusun dalam lebih dari dua dimensi.</p>
+                    <p class="lead">Contoh: int data[2][3][4];</p>
+                </li>
+                <li class="lead">Array Asosiatif (Associative Array atau Dictionary):
+                    <p class="lead">Pengertian: Array asosiatif adalah array di mana setiap elemen memiliki pasangan nilai kunci-nilai (key-value).</p>
+                    <p class="lead">Contoh (dalam Python): kamus = {'nama': 'John', 'usia': 25, 'kota': 'Jakarta'};</p>
+                </li>
+                <li class="lead">Array Dinamis:
+                    <p class="lead">Pengertian: Array dinamis adalah array yang ukurannya dapat diubah selama runtime. Ini memungkinkan pengalokasian memori yang fleksibel.</p>
+                    <p class="lead">Contoh (dalam Python menggunakan List): dinamis = [1, 2, 3]; dinamis.append(4);</p>
+                </li>
+                <li class="lead">Array String:
+                    <p class="lead">Pengertian: Array string adalah array khusus yang berisi karakter atau teks.</p>
+                    <p class="lead">Contoh: char teks[] = "Hello";</p>
+                </li>
+                <li class="lead">Array Bersarang (Nested Array):
+                    <p class="lead">Pengertian: Array bersarang adalah array yang elemennya sendiri merupakan array. Ini dapat digunakan untuk representasi struktur data yang kompleks.</p>
+                    <p class="lead">Contoh: int matriksBesar[2][3][2] = {{{1,2},{3,4},{5,6}},{{7,8},{9,10},{11,12}}};</p>
+                </li>
+                <li class="lead">Array Zero-Based dan One-Based:
+                    <p class="lead">Pengertian: Array zero-based dimulai dari indeks 0, sedangkan array one-based dimulai dari indeks 1.</p>
+                    <p class="lead">Contoh Zero-Based: int arrayZero[5] = {1, 2, 3, 4, 5};</p>
+                    <p class="lead">Contoh One-Based: int arrayOne[5] = {0, 1, 2, 3, 4}; (indeks dimulai dari 1)</p>
+                </li>
+            </ul>
+            <p class="lead">Setiap jenis array memiliki kegunaan dan kelebihan tersendiri tergantung pada kebutuhan dan konteks penggunaan dalam suatu program</p>
+            <p class="lead">Array satu dimensi, atau sering disebut juga sebagai array linear, adalah struktur data yang digunakan untuk menyimpan elemen-elemen data dengan tipe yang sama dalam suatu baris atau satu dimensi. Setiap elemen dalam array dapat diakses menggunakan indeks numerik, dan indeksnya dimulai dari 0 (nol) hingga jumlah elemen dikurangi 1.</p>
+        </div>
+        <ul>
+            <li class="lead">Jenis Data yang Sama:
+                <p class="lead">Semua elemen dalam array satu dimensi memiliki jenis data yang sama. Ini berarti mereka harus memiliki tipe data yang serupa, seperti integer, float, karakter, atau tipe data lainnya.</p>
+            </li>
+            <li class="lead">Urutan Linier:
+                <p class="lead">Elemen-elemen dalam array satu dimensi disusun secara berurutan dalam satu baris atau satu deret.</p>
+            </li>
+            <li class="lead">Akses Menggunakan Indeks:
+            <p class="lead">Setiap elemen dalam array dapat diakses menggunakan indeks numerik. Indeks dimulai dari 0 dan berlanjut secara berurutan.</p>
+            </li>
+            <li class="lead">Ukuran Tetap:
+                <p class="lead">Ukuran array, yaitu jumlah elemen yang dapat disimpan di dalamnya, ditentukan pada saat deklarasi array dan bersifat tetap selama eksekusi program.</p>
+            </li>
+            <li class="lead">Contoh Penggunaan:
+                <p class="lead">Dapat digunakan untuk menyimpan data seperti daftar angka, nilai-nilai suhu harian, atau karakter dalam sebuah kata.</p>
+            </li>
+        </ul>
+        <img src="gambar/array/array 4.PNG" class="img-fluid" alt="gambar binaryTree">
+        <p class="lead">Dalam contoh-contoh ini, angka adalah array satu dimensi yang menyimpan angka-angka dengan tipe data integer. Elemen-elemen array diakses menggunakan indeks, misalnya, angka[0] merujuk pada elemen pertama dalam array.
+        </p>
+        <p class="lead">Array dua dimensi, atau matriks, adalah struktur data yang digunakan untuk menyimpan elemen-elemen data dengan tipe yang sama dalam bentuk tabel dua dimensi, mirip dengan matriks matematika. Array ini terdiri dari baris dan kolom, dan setiap elemen dapat diakses menggunakan dua indeks, yaitu indeks baris dan indeks kolom.</p>
+        <ul>Berikut adalah beberapa poin pengertian tentang array dua dimensi:
+            <li class="lead">
+                Elemen dengan Tipe Data yang Sama:
+                <p class="lead">Seperti array satu dimensi, semua elemen dalam array dua dimensi memiliki tipe data yang sama. Ini memungkinkan untuk menyimpan data yang terorganisir secara terstruktur.</p>
+            </li>
+            <li class="lead">Struktur Baris dan Kolom:
+                <p class="lead">Elemen-elemen dalam array dua dimensi diorganisir dalam baris dan kolom. Setiap baris dapat diidentifikasi dengan menggunakan satu indeks (indeks baris), dan setiap kolom dengan menggunakan indeks yang lain (indeks kolom).</p>
+            </li>
+            <li class="lead">Akses Menggunakan Dua Indeks:
+                <p class="lead">Setiap elemen dalam array dua dimensi diakses menggunakan dua indeks numerik, yaitu indeks baris dan indeks kolom.</p>
+            </li>
+            <li class="lead">Ukuran Tetap:
+                <p class="lead">Ukuran array dua dimensi ditentukan pada saat deklarasi dan bersifat tetap selama eksekusi program. Ukuran ini mencakup jumlah baris dan jumlah kolom.</p>
+            </li>
+            <li class="lead">Contoh Penggunaan:
+                <p class="lead">Array dua dimensi cocok untuk menyimpan data yang memiliki struktur baris dan kolom, seperti data matriks, data tabel, atau data spasial.</p>
+            </li>
+        </ul>
+        <img src="gambar/array/array 3.PNG" class="img-fluid" alt="gambar binaryTree">
+        <p class="lead">Dalam contoh-contoh ini, matriks adalah array dua dimensi yang menyimpan angka-angka dengan tipe data integer. Elemen-elemen array diakses menggunakan dua indeks, misalnya, matriks[0][0] merujuk pada elemen di baris pertama dan kolom pertama.</p>
+        <p class="lead">Array tiga dimensi adalah struktur data yang menyimpan elemen-elemen data dalam bentuk tiga dimensi. Dalam konteks array tiga dimensi, data diorganisir dalam bentuk kubus, yang memiliki panjang, lebar, dan tinggi. Setiap elemen dalam array dapat diakses menggunakan tiga indeks, masing-masing untuk dimensi panjang, lebar, dan tinggi.</p>
+
+        <ul>Berikut adalah beberapa poin pengertian tentang array tiga dimensi:
+            <li class="lead">Elemen dengan Tipe Data yang Sama:
+                <p class="lead">Semua elemen dalam array tiga dimensi memiliki tipe data yang sama, serupa dengan array satu dan dua dimensi.</p>
+            </li>
+            <li class="lead">Struktur Tiga Dimensi:
+                <p class="lead">Elemen-elemen dalam array tiga dimensi diorganisir dalam tiga dimensi: panjang, lebar, dan tinggi. Setiap dimensi dapat diidentifikasi menggunakan indeks numerik</p>
+            </li>
+            <li class="lead">Akses Menggunakan Tiga Indeks:
+                <p class="lead">Setiap elemen dalam array tiga dimensi diakses menggunakan tiga indeks numerik, masing-masing untuk dimensi panjang, lebar, dan tinggi.</p>
+            </li>
+            <li class="lead">Ukuran Tetap:
+                <p class="lead">Ukuran array tiga dimensi ditentukan pada saat deklarasi dan bersifat tetap selama eksekusi program. Ukuran ini mencakup panjang, lebar, dan tinggi array.</p>
+            </li>
+            <li class="lead">Contoh Penggunaan:
+                <p class="lead">Array tiga dimensi umumnya digunakan untuk menyimpan data yang memiliki struktur tiga dimensi dalam dunia nyata, seperti data spasial tiga dimensi atau data dari pemindaian citra medis tiga dimensi.
+                </p>
+            </li>
+        </ul>
+        <img src="gambar/array/array 5.PNG" class="img-fluid" alt="gambar binaryTree">
+        <p class="lead">Dalam contoh-contoh ini, dataTigaDimensi adalah array tiga dimensi yang menyimpan angka-angka dengan tipe data integer. Elemen-elemen array diakses menggunakan tiga indeks, seperti dataTigaDimensi[0][1][2] merujuk pada elemen di dimensi pertama, baris kedua, dan kolom ketiga.
+        </p>
+
+
+    </section>
+
+
+
+
+    <script src="boostarp/js/bootstrap.min.js"></script> 
+</body>
+</html>
