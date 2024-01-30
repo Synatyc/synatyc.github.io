@@ -1,0 +1,296 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+        <link rel="stylesheet" href="binaryTree.css">
+    </head>
+    </head>
+    <body>
+        <div class="header">
+            <div class="navigation synatyc">
+                <h1><a href="">synatyc</a></h1>
+            </div>
+            <div class="navigation Home">
+                <h1 ><a href="index.html">Home</a></h1>
+            </div>
+
+            <div class="navigation Profile">
+                <h1 ><a href="">Profile</a></h1>
+            </div>
+
+            <div class="navigation Data">
+                <h1 ><a href="">Data Book</a></h1>
+            </div>
+        </div>
+        <section class="content ">
+            <div class="container-sm">
+                <div class="row text-center ">
+                    <div class="col">
+                    <h1 class="display-1">tipe data dan operator</h1>
+                    <blockquote class="blockquote">
+                        <p>
+                            Data types atau tipe data adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan. Untuk mengembangkan sebuah program, ada beberapa tipe data yang akan kita pelajari. Di antaranya adalah Character, String, Array, Numbers dan Booleans.. </p>
+                        </blockquote>
+                        <img src="gambar/StrukturData/ilustrasi node.png" class="img-fluid" alt="gambar binaryTree">
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content ">
+            <div class="container-sm">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2 class="display-2">Tipe Data Primitif:</h2>
+                        </div>
+                    </div>
+                    <p class="lead">tipe data pada Java merupakan jenis data yang disimpan pada sebuah wadah atau juga sering disebut variabel. Variable sendiri merupakan sebuah tempat penyimpanan yang berfungsi untuk menyimpan nilai. Nilai tersimpan pada variabel Java tentunya berbeda-beda tergantung jenis tipe data yang digunakan pada variabel tersebut.</p>
+                    <p class="lead">Untuk itu jika sudah membahas mengenai suatu tipe data pasti melibatkan variabel. Pada bahasa Java sendiri terdapat 2 tipe data yaitu, data primitif dan non-primitif. Namun kali ini kita akan membahas mengenai tipe data primitif serta kata kunci yang termasuk didalamnya.</p>
+                    
+                    <ul>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                     <h2 class="display-2"> Tipe Data Byte:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Tipe data byte bersifat signed dan merupakan tipe data integer 8-bit. Nilai minimum untuk tipe data byte adalah -128, sementara untuk nilai maksimum adalah 127. Pada tipe data byte nilai defaultnya adalah 0. Tipe data ini digunakan untuk menghemat penggunaan ruang memori pada array yang besar. Hal ini karena byte 4 kali kecil dari tipe data int. Data byte ini bisa digunakan sebagai pengganti dari int. Sebagai contoh : byte x = 99, byte y = -99</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Tipe Data Short</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Selanjutnya, tipe data ini juga adalah integer 16-bit dan bersifat signed. Lalu, jangkauan nilai dari -32768 hingga 32767 dengan minimumnya -32768 sementara nilai maksimumnya adalah 32767. Lalu untuk nilai defaultnya yaitu 0. Kalian bisa menggunakan data short untuk menghemat ruang memori seperti pada tipe data byte. Perlu kalian ketahui tipe data ini 2 kali lebih kecil daripada integer. Sebagai contoh : short a = 9999, short b = -9999.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Tipe Data Int</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Dalam tipe data primitif, data int merupakan yang sering digunakan. Tipe data int merupakan integer dengan ukuran 32-bit dan bersifat signed. Nilai minimumnya adalah -2147483648 sedangkan nilai maksimumnya adalah 2147483647. Umumnya tipe data ini dipakai dalam menampung dari nilai-nilai integral. Selain itu bisa juga dipakai untuk index struktur perulangan atau sebuah array. Pada tipe data int, nilai defaultnya adalah 0.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Tipe Data Long</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Tipe data long merupakan tipe data integer dengan ukuran 64-bit dan juga bersifat signed. Pada tipe ini nilai minimumnya adalah -9223372036854775808 sedangkan untuk nilai minimumnya adalah 9223372036854775807. Data ini seringkali digunakan pada kasus yang mampu menampung dari nilai pada jangkauan lebih besar daripada data int. Tipe data long memiliki nilai default 0L. Contohnya : misalkan long a = 999999999, maka long b = -999999999</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Tipe Data Float</h2>  
+                                </div>
+                            </div>
+                            p class="lead">Tipe data ini menunjukkan nilai desimal yang menggunakan ruang penyimpanan dengan ukuran 32-bit. Salah satu kata kunci dalam tipe data primitif ini sering digunakan untuk nilai-nilai yang mengandung presisi tunggal atau single-precision. Single-precision sendiri memakan ruang penyimpanan setengah kali lebih sedikit dari double-precision. Untuk menghemat ruang pada array besar yang berisi nilai desimal kalian bisa menggunakan float ini. Perlu kalian ketahui, tipe data float tidak cocok digunakan untuk nilai-nilai seperti mata uang. Pada tipe ini nilai defaultnya adalah 0.0f. Contoh : float suhu, float f1 = 234 . 5f.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                        <h2 class="display-2">Tipe Data Double</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Tipe ini sering digunakan untuk nilai desimal yang mengandung tingkat presisi ganda atau double-precision dengan ukuran 64-bit. Sehingga sebagai nilai default untuk nilai desimal biasanya sering menggunakan tipe data ini. Hal ini karena tipe ini akan lebih cepat untuk perhitungan matematis daripada tipe data float. Selain itu tipe data double akan menghasilkan nilai yang lebih akurat. Nilai defaultnya adalah 0.0d. Contoh: double pi bernilai 3.14, dan double r bernilai 21.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2">Tipe Data Boolean</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Tipe data ini sering digunakan untuk menghasilkan nilai logika dengan menghasilkan 2 nilai yaitu true dan false. Dalam tipe data ini ditandai dengan kata kunci boolean yang digunakan sebagai penanda untuk kondisi benar atau salah. Biasanya sering digunakan bersamaan dengan penggunaan if else. Nilai default pada tipe boolean adalah false. Contoh: Jika boolean a = true, maka boolean b = false.</p>
+                        </li>
+                            
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2">Tipe Data Char</h2>
+                                </div>
+                             </div>
+                            <p class="lead">Tipe data char merupakan suatu karakter Unicode dengan membutuhkan ukuran 16-bit. Unicode merupakan sekumpulan karakter yang terdapat pada semua bahasa misalnya arap, yunani dan latin. Tipe data ini mampu menampung karakter apa saja dan hanya 1 karakter saja, sebagai contoh untuk char huruf ‘A’. Nilai minimumnya adalah ‘u0000’ sedangkan nilai maksimalnya adalah ‘uffff’.</p>
+                               
+                        </li>
+                    </ul>
+                    <ol>
+                        <p class="lead">Dari 8 tipe data atau kata kunci dalam tipe data primitif di atas, selanjutnya dibagi menjadi 3 kelompok. Berikut penjelasannya:
+                        </p>
+                        <li class="lead">Number (Pecahan Bulat dan Pecahan)
+                            <p class="lead">Kemudian, tipe data primitif yang termasuk pada kelompok bilangan bulat yakni short, long, byte dan int. Keseluruhan tipe data tersebut bisa mempresentasikan bilangan positif dan negatif. Hal ini karena data tersebut bersifat sigmed. Sementara yang termasuk dalam bilangan pecahan adalah tipe data float dan double.
+                            </p>
+                        </li>
+                        <li class="lead">Karakter
+                            <p class="lead">Dalam kelompok karakter hanya terdapat 1 tipe data saja, yaitu tipe data char. Karena char hanya bisa menampung satu karakter saja dan akan muncul pesan error jika terdapat lebih dari satu karakter.</p>
+                        </li>
+                        <li class="lead"> Logika
+                            <p class="lead">Tipe data untuk kelompok logika adalah tipe data boolean. Seperti yang sudah dibahas sebelumnya, tipe boolean digunakan dalam sebuah kondisi yang bernilai salah dan benar</p>
+                        </li>
+                    </ol>
+             </div>
+            </div>
+        </section>
+        <section class="content ">
+            <div class="container-sm">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2 class="display-2">Tipe Data Terstruktur:</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Disetiap pemrograman terstruktur pasti menggunakan tipe data terstruktur dalam hal membuat sebuah program/aplikasi. Sebelumnya kita harus mengetahui terlebih dahulu pemrograman terstruktuk itu apasih ? Jadi, pemrograman terstruktur merupakan suatu proses untuk mengimplementasikan urutan langkah untuk menyelesaikan suatu masalah dalam bentuk program dan tersususn berdasarkan algoritma yang sederhana dan mudah dipahami.</p>
+                    <ol><p class="lead">
+                        Tipe data terstruktur adalah tipe data yang dapat digunakan untuk menampung lebih dari satu tipe data dalam variabel sehingga mudah saling berhubungan dan dapat disusun dalam satu struktur. Dalam tipe data struktur setiap perubah bisa menyimpan lebih dari sebuah nilai data. Jenis-jenis dalam tipe data terstruktur diantaranya :
+                        </p>
+                        <li class="lead">Array/Larik
+                            <p class="lead">Array/larik merupakan jenis data yang mempunyai tipe data yang sama dan mempunyai nama variable yang sama. Array dipanggil berdasarkan indeksnya. Indeks array dalam bahasa C dimulai dari nol. Array berdasarkan banyaknya indeks dapat dibagi menjadi satu dimensi, dua dimensi dan  multi dimensi. Penggunaan array sangat membantu dalam menghemat pamakaian variable. Penulisan Array komponen dalam larik dinyatakan sebagai nomor index. Bentuk umum :</p>
+                            <p class="lead">Type pengenal = array [tipe index] of tipe;</p>
+                            <p class="lead">dimana :</p>
+                            <p class="lead"> Pengenal : nama tipe data</p>
+                            <p class="lead">Tipe index : tipe data untuk nomor index</p>
+                            <p class="lead">Tipe : tipe data komponen</p>
+                            <ul>
+                                <p class="lead">
+                                    Contoh Array :</p>
+                                <p class="lead">meter tipe index menentukan banyaknya komponen larik tersebut. Tipe index boleh berupa sembarang tipe ordinal kecuali longint dan sub jangkauan dari longint. Contoh deklarasi data larik :</p>
+                                <li class="lead">Type vek=array[1..100] of integer;
+                                    <p class="lead">Deklarasi diatas berarti Vek adalah tipe data yang berupa larik yang komponennya bertipe integer dan banyaknya 100 buah. Deklarasi yang demikian disebut deklarasi larik dimensi satu (vektor). Jika tipe komponen juga berupa sebuah larik lain, akan kita peroleh larik dimensi banyak. Contoh :
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="lead">File teks
+                            <p class="lead">File teks merupakan file yang berisi karakter yang dibentuk dalam baris-baris dan masing-masing baris dengan end-of-line marker berupa karakter carriage return dan karakter line feed (CR/LF). Sedangkan akhir dari file ditunjukkan dengan karakter Ctrl-Z. Panjang dari tiap-tiap baris dari file teks dapat berbeda-beda, sehingga posisi dari suatu baris tertentu dari file teks tidak dapat dihutung dan akibatnya file tekas hanya dapat diakses secara urut. File teks sebenarnya merupakan file dengan tipe Char, tetapi mempunyai perbedaan, yaitu nilai yang bukan tipe Char dapat direkam dan dibaca oleh file teks. Nilai yang bukan tipe Char ini akan secara otomatis dirubah ke atau dari tipe Char.
+                            </p>
+                        </li>
+                        <li class="lead">File bertipe
+                            <p class="lead">Berbeda dengan file teks yang hanya dapat diakses secara urut, file bertipe (typed file) disamping dapat juga diakses secara urut (sequential access), dapat juga dikases secara acak (random access). Ini berarti komponen-komponen di dalam file bertipe dapat dibaca atau direkam dari manapun di dalam file.TtipeData dapat berupa integer, real, char, string, array, record, dan sebagainya. Dalam file bertipe, kita dapat menambahkan variabel terdefinisi dalam unit standard System untuk menentukan kode akses file bertipe. Adapun kode aksesnya adalah: 0 – read only 1 – write only 2 – read/write (default) </p>
+                        </li>
+                        <li class="lead">File tak bertipe
+                            <p class="lead">File tak bertipe (untyped file) adalah channel I/O (Input/Output) level rendah (low level I/O channel) yang digunakan untuk mengakses langsung suatu file di disk tidak peduli bagaimana tipe dan strukturnya. Karena file tak bertipe tidak memandang tipe dan struktur filenya, maka file tak bertipe ini sifatnya kompatibel dengan file apapun dan tepat digunakan untuk operasi-operasi mengecek keberadaan suatu file di dalam disk, menghapus suatu file, mengganti nama dari suatu file, menyalin suatu file, dan operasi-operasi lainnya yang tidak langsung melibatkan operasi I/O. Prosedur dan fungsi standard yang dapat digunakan di file bertipe dapat juga digunakan di file tak bertipe, kecuali prosedur standard Read dan Write yang diganti dengan prosedur standard BlockRead dan BlockWrite. Kedua prosedur ini digunakan untuk transfer data dengan kecepatan tinggi.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="content ">
+            <div class="container-sm">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2 class="display-2">TTipe Data Abstrak:</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Dalam pengembangan perangkat lunak, algoritma struktur data adalah aspek kritis yang menentukan kinerja, efisiensi, dan kehandalan sistem. Operator struktur menjadi elemen penting dalam merancang algoritma untuk memanipulasi dan mengelola data dengan efisien. Artikel ini akan membahas berbagai operator struktur pada algoritma struktur data serta peran krusialnya dalam mengoptimalkan kinerja program.
+                    </p>
+                    <ol>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Operator Penugasan</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator ini digunakan untuk memberikan nilai ke variabel. Dalam struktur data, operator penugasan membantu dalam menginisialisasi dan memperbarui nilai-nilai yang disimpan dalam struktur tersebut. Misalnya, dalam array atau linked list, operator penugasan memungkinkan perubahan nilai elemen tertentu.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Operator Pembanding:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator pembanding, seperti "==" (sama dengan), "!=" (tidak sama dengan), "<" (kurang dari), dan sebagainya, sangat penting dalam membandingkan nilai-nilai di dalam struktur data. Mereka membantu dalam pengambilan keputusan dan pengontrolan alur program, memastikan bahwa operasi yang dijalankan sesuai dengan kondisi yang ditentukan.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2">  Operator Aritmatika:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Dalam beberapa kasus, struktur data memerlukan manipulasi matematis. Operator aritmatika seperti "+", "-", "*", dan "/" digunakan untuk melakukan operasi matematika pada nilai-nilai di dalam struktur data, seperti array numerik. Contoh penggunaan dapat mencakup penghitungan total atau rata-rata dari serangkaian nilai.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Operator Logika:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator logika seperti "AND", "OR", dan "NOT" berperan penting dalam penanganan kondisi dan pengambilan keputusan di dalam algoritma struktur data. Mereka membantu dalam menggabungkan syarat-syarat untuk menghasilkan logika yang sesuai dengan kebutuhan algoritma.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2"> Operator Increment dan Decrement:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator increment ("++") dan decrement ("--") berguna ketika perlu mengubah nilai variabel, khususnya dalam konteks pengindeksan struktur data seperti array atau linked list. Penggunaan yang tepat dapat meningkatkan efisiensi dan kejelasan kode.
+                            </p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2">  Operator Bitwise:</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator bitwise ("&", "|", "^", "~") digunakan untuk melakukan operasi pada level bit di dalam nilai. Meskipun kurang umum, mereka dapat menjadi alat yang kuat dalam manipulasi data pada tingkat bit, terutama dalam struktur data yang memanfaatkan representasi biner.</p>
+                        </li>
+                        <li class="lead">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2 class="display-2">  Operator Ternary::</h2>
+                                </div>
+                            </div>
+                            <p class="lead">Operator ternary ("? :") menyediakan cara singkat untuk menulis ekspresi kondisional. Dalam struktur data, ini dapat membantu dalam menginisialisasi nilai atau menentukan operasi berdasarkan kondisi tertentu.</p>
+                        </li>
+                    </ol>
+                    <p class="lead">
+                        Dalam mengembangkan algoritma struktur data, pemahaman yang kuat tentang operator struktur menjadi kunci. Pemilihan dan penggunaan operator yang tepat dapat memengaruhi kinerja algoritma secara signifikan. Oleh karena itu, programmer perlu memahami karakteristik dan kebutuhan dari struktur data yang digunakan untuk membuat keputusan yang cerdas dalam menggunakan operator tertentu. Dengan demikian, efisiensi dan keandalan sistem dapat ditingkatkan, menghasilkan solusi perangkat lunak yang lebih tangguh dan responsif.</p>
+                    <p class="lead">
+                        Pemahaman Mendalam tentang Karakter, Field, Record, File, dan Database dalam Algoritma Pemrograman</p>
+                    <p class="lead">Dalam dunia pemrograman, terdapat konsep-konsep fundamental yang membentuk struktur dan organisasi data. Mengenal karakter (character), field, record, file, dan database menjadi esensial dalam merancang algoritma pemrograman yang efisien dan dapat diandalkan.</p>
+                    <ul>
+                        <li class="lead">Karakter (Character):
+                            <p class="lead">Karakter adalah unit dasar dari data yang merepresentasikan simbol tertentu, seperti huruf, angka, atau tanda baca. Dalam pemrograman, karakter sering direpresentasikan dalam bentuk kode ASCII atau Unicode, memungkinkan komputer untuk memahami dan memanipulasi berbagai simbol.</p>
+                        </li>
+                        <li class="lead">Field:
+                            <p class="lead">Field adalah unit data yang menyimpan informasi tentang suatu atribut tertentu. Dalam suatu struktur data, field sering kali mewakili kolom atau bagian dari suatu entitas. Misalnya, dalam basis data pelanggan, field dapat mencakup nama, alamat, dan nomor telepon.
+                            </p>
+                        </li>
+                        <li class="lead">Record:
+                            <p class="lead">Record adalah kumpulan field yang membentuk satu entitas atau catatan lengkap. Setiap record memiliki atribut atau field yang berbeda-beda. Contohnya, dalam basis data karyawan, satu record mungkin berisi nama, posisi pekerjaan, dan gaji.</p>
+                        </li>
+                        <li class="lead">File:
+                            <p class="lead">File adalah kumpulan record yang terorganisir dengan baik. File dapat berbentuk teks atau biner, dan dapat diakses untuk membaca atau menulis data. Dalam pemrograman, pengelolaan file sangat penting untuk menyimpan dan memanipulasi data secara efisien.</p>
+                        </li>
+                        <li class="lead">Database:
+                            <p class="lead">Database adalah kumpulan file yang saling terhubung dan terorganisir dalam suatu sistem. Database menyediakan mekanisme penyimpanan, pengambilan, dan manipulasi data secara efisien. Ada berbagai jenis database, termasuk basis data relasional dan basis data NoSQL, yang menawarkan model dan keuntungan yang berbeda.</p>
+                        </li>
+                    </ul>
+                    <ul>Peran Penting dalam Algoritma Pemrograman:
+                        <li class="lead">Efisiensi Penyimpanan dan Pemrosesan
+                            <p class="lead">Dengan memahami karakter, field, record, file, dan database, programmer dapat merancang struktur data yang efisien. Pemilihan tipe data yang tepat untuk setiap field dan record sangat penting untuk mengoptimalkan penggunaan memori dan kecepatan pemrosesan.
+                            </p>
+                        </li>
+                        <li class="lead">Integritas Data:
+                            <p class="lead">Konsep field, record, dan database mendukung integritas data. Dengan merancang struktur data yang benar, programmer dapat memastikan bahwa data disimpan dan diakses dengan akurat dan konsisten.</p>
+                        </li>
+                        <li class="lead">Manajemen Informasi:
+                            <p class="lead">Karakter, field, record, file, dan database membantu dalam manajemen informasi. Dengan menggunakan konsep ini, programmer dapat membuat algoritma pemrograman yang efektif untuk mengorganisir dan memanipulasi data sesuai kebutuhan.</p>
+                        </li>
+                        <li class="lead">Pengolahan Transaksi dan Pertukaran Data:
+                            <p class="lead">Basis data dan file mendukung pengolahan transaksi dan pertukaran data antar program. Ini sangat penting dalam pengembangan aplikasi yang melibatkan kerja sama antar sistem atau proses.</p>
+                        </li>
+                    </ul>
+                    <p class="lead">Dengan memahami karakter, field, record, file, dan database, programmer dapat menciptakan algoritma pemrograman yang handal dan efisien. Kemampuan untuk merancang dan mengelola data dengan baik menjadi inti dari pengembangan perangkat lunak yang sukses dan sistem informasi yang efektif.</p>
+                </div>
+            </div>
+        </section>
+        <script src="boostarp/js/bootstrap.min.js"></script> 
+    </body>
+</html>
