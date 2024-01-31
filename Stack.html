@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1"> Stack</h1>
+                <p class="lead">adalah struktur data yang mengikuti prinsip Last In, First Out (LIFO). Artinya, elemen terakhir yang dimasukkan ke dalam stack adalah elemen pertama yang diambil atau dikeluarkan dari stack. Operasi penambahan elemen pada stack disebut "push," dan operasi pengambilan elemen dari stack disebut "pop."</p>
+                </div>
+            </div>
+            <ul>
+                <p class="lead">Berikut adalah beberapa konsep dasar terkait stack:</p>
+                <li class="lead">Push:
+                    <p class="lead">Definisi: Menambahkan elemen ke atas (atau akhir) stack.</p>
+                    <p class="lead">Operasi: push(item)</p>
+                </li>
+                <li class="lead">Pop:
+                    <p class="lead">Definisi: Elemen teratas dari stack, yang paling baru ditambahkan atau yang akan diambil selanjutnya.</p>
+                    <p class="lead">Operasi: top()</p>
+                </li>
+                <li class="lead">Size:
+                    <p class="lead">Definisi: Jumlah elemen yang saat ini ada dalam stack.</p>
+                    <p class="lead">Operasi: size()</p>
+                </li>
+                <li class="lead">isEmpty:
+                    <p class="lead"></p>Definisi: Memeriksa apakah stack kosong atau tidak.
+                    <p class="lead">Operasi: isEmpty()</p>
+                </li>
+            </ul>
+            <p class="lead">Stack dapat diimplementasikan menggunakan struktur data dasar seperti array atau linked list. Dalam konteks pemrograman, stack sering digunakan untuk melacak pemanggilan fungsi (call stack), ekspresi matematika (evaluasi ekspresi), manajemen memori, dan berbagai aplikasi lain yang memerlukan prinsip LIFO.</p>
+            <img src="gambar/stack/satack1.PNG" class="img-fluid" alt="gambar binaryTree">
+            <p class="lead">Dalam contoh ini, elemen-elemen ditambahkan ke stack menggunakan operasi push, diambil menggunakan operasi pop, dan informasi tentang elemen teratas dapat dilihat menggunakan operasi top. Operasi lain seperti size dan isEmpty membantu dalam manajemen stack.</p>
+            <ul>
+                <p class="lead">Karakteristik utama dari struktur data stack melibatkan sifat Last In, First Out (LIFO) yang mendasarinya. Berikut adalah beberapa karakteristik kunci dari stack:</p>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> Last In, First Out (LIFO):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Elemen terakhir yang ditambahkan ke dalam stack adalah elemen pertama yang diambil atau dikeluarkan. Ini menciptakan urutan operasi yang sebaliknya dari konsep antrian.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2">Push (Penambahan Elemen):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Operasi push digunakan untuk menambahkan elemen baru ke dalam stack. Elemen ini akan diletakkan di atas elemen teratas yang sudah ada.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> Pop (Pengambilan Elemen):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Operasi pop digunakan untuk mengambil (menghapus) elemen teratas dari stack. Elemen ini adalah yang terakhir ditambahkan dan paling atas dalam struktur stack.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> Top (Elemen Teratas):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Elemen teratas adalah elemen yang paling baru ditambahkan ke dalam stack atau elemen yang akan diambil selanjutnya. Operasi top digunakan untuk melihat elemen teratas tanpa menghapusnya.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2">Size (Ukuran Stack):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Ukuran stack adalah jumlah elemen yang ada di dalamnya. Operasi size memberikan informasi tentang jumlah elemen dalam stack.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> isEmpty (Cek Kehabisan Elemen):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Operasi isEmpty digunakan untuk memeriksa apakah stack kosong atau tidak. Jika stack kosong, operasi ini mengembalikan nilai true; jika tidak, mengembalikan nilai false.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> Implementasi dengan Array atau Linked List:</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Stack dapat diimplementasikan menggunakan struktur data dasar seperti array atau linked list. Dalam implementasi array, sebuah indeks dapat digunakan untuk menunjukkan elemen teratas. Dalam implementasi linked list, operasi push dan pop dapat dilakukan dengan menyesuaikan pointer teratas stack.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2">Digunakan dalam Pemanggilan Fungsi (Call Stack):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Stack digunakan untuk melacak pemanggilan fungsi dalam pemrograman. Setiap kali fungsi dipanggil, informasi tentang fungsi tersebut disimpan di stack, dan ketika fungsi selesai dieksekusi, informasi tersebut dihapus dari stack.</p>
+                </li>
+                <li class="lead">
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2">Manajemen Memori:</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Stack digunakan untuk manajemen memori dalam beberapa sistem. Variabel lokal dan informasi pengembalian fungsi disimpan dalam stack.
+                       </p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                             <h2 class="display-2"> Operasi Konstan (O(1)):</h2>
+                        </div>
+                    </div>
+                    <p class="lead">Operasi push, pop, top, size, dan isEmpty dalam stack biasanya memiliki kompleksitas waktu konstan, yaitu O(1). Artinya, waktu yang dibutuhkan untuk melakukan operasi tidak bergantung pada ukuran stack.</p>
+                </li>
+
+            </ul>
+            <p class="lead">Pemahaman karakteristik ini membantu dalam merancang dan menggunakan stack secara efektif dalam pengembangan perangkat lunak.</p>
+            <p class="lead">Dalam konteks struktur data stack, kondisi stack merujuk pada situasi atau status terkini dari stack tersebut. Beberapa kondisi umum dalam stack melibatkan apakah stack kosong atau penuh, dan beberapa operasi yang dapat dilakukan pada stack.</p>
+        
+            <ul>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2"> Stack Kosong:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Kondisi ini terjadi ketika tidak ada elemen yang ada dalam stack. Pada umumnya, kondisi ini diamati saat inisialisasi stack atau setelah semua elemen diambil dari stack.</p>
+                    <p class="lead">Cara memeriksa: Menggunakan operasi isEmpty().</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2"> Stack Penuh (dalam implementasi terbatas):</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Jika stack diimplementasikan dengan ukuran yang terbatas (misalnya, array dengan ukuran tetap), kondisi ini terjadi ketika stack telah mencapai kapasitas maksimalnya.</p>
+                    <p class="lead">Cara memeriksa: Melibatkan pemeriksaan ukuran stack dan batas kapasitas.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Elemen Teratas (Top) pada Stack:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Kondisi ini mencakup informasi tentang elemen teratas stack, yaitu elemen yang paling baru ditambahkan atau yang akan diambil selanjutnya.</p>
+                    <p class="lead">Cara memeriksa: Menggunakan operasi top() untuk melihat elemen teratas.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2"> Ukuran Stack:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Kondisi ini memberikan informasi tentang jumlah elemen yang ada dalam stack pada saat tertentu.</p>
+                    <p class="lead">Cara memeriksa: Menggunakan operasi size() untuk mendapatkan ukuran stack.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Kondisi Umum Setelah Operasi Push atau Pop:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Setelah operasi push, stack akan memiliki elemen baru di atasnya.</p>
+                    <p class="lead">Setelah operasi pop, stack akan kehilangan elemen teratasnya.</p>
+                    <p class="lead">Cara memeriksa: Melibatkan pemeriksaan hasil dari operasi push atau pop, serta melihat kondisi terkini menggunakan operasi lainnya.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Operasi yang Dapat Dilakukan:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Kondisi stack juga dapat mencakup jenis operasi yang dapat atau tidak dapat dilakukan pada stack, tergantung pada situasi tertentu.</p>
+                    <p class="lead">Contoh: Pada stack yang terbatas, jika stack penuh, operasi push tidak dapat dilakukan.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Kondisi Keseluruhan:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Kondisi keseluruhan stack mencakup informasi tentang beberapa faktor sekaligus, seperti apakah stack kosong, berapa ukuran stack, dan elemen teratasnya.</p>
+                    <p class="lead">Cara memeriksa: Melibatkan pengamatan kombinasi kondisi menggunakan operasi-operasi yang sesuai.</p>
+                </li>
+            </ul>
+            <p class="lead">Memahami kondisi stack penting untuk mengelola stack dengan efisien dan mencegah kesalahan seperti underflow (mengambil dari stack kosong) atau overflow (menambahkan ke stack penuh).</p>
+
+            <ul>
+                <p class="lead">Stack memiliki berbagai aplikasi dalam dunia pemrograman dan algoritma. Berikut adalah beberapa penggunaan umum dari stack:</p>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Pemanggilan Fungsi (Call Stack):</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Stack digunakan untuk melacak pemanggilan fungsi dalam suatu program. Setiap kali sebuah fungsi dipanggil, informasi tentang fungsi tersebut, seperti alamat kembalinya dan variabel lokalnya, disimpan di dalam stack. Ketika fungsi selesai dieksekusi, informasi tersebut dihapus dari stack.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Evaluasi Ekspresi Matematika:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Stack sering digunakan untuk evaluasi ekspresi matematika dalam notasi postfix atau postfix. Dalam pendekatan ini, operator-operator dan operand-operand disusun dalam urutan postfix, dan stack digunakan untuk melacak nilai-nilai sementara selama evaluasi ekspresi.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Pemantauan Kondisi Terbuka dan Tertutup (Matching Parentheses):</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Stack dapat digunakan untuk memeriksa keseimbangan dan ketertutupan tanda kurung, kurawal, dan kurung siku dalam suatu teks. Setiap kali tanda buka muncul, itu ditambahkan ke dalam stack, dan ketika tanda tutup muncul, tanda buka yang sesuai dihapus dari stack. Jika stack kosong pada akhir, maka tanda kurung seimbang.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Undo Mechanism dalam Editor atau Aplikasi:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Stack dapat digunakan untuk mendukung mekanisme "undo" dalam aplikasi pengeditan teks atau grafis. Setiap aksi yang dapat dibatalkan disimpan dalam stack, dan operasi "undo" mengambil aksi terakhir dari stack</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Manajemen Memori:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Dalam beberapa sistem operasi, stack digunakan untuk menyimpan variabel lokal dan informasi pemanggilan fungsi. Stack memungkinkan alokasi dan dealokasi memori yang efisien untuk variabel lokal dan informasi pemanggilan fungsi.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Pelacakan Jalur (Path Tracking):</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Dalam algoritma pemecahan masalah, stack dapat digunakan untuk melacak jalur yang telah diambil selama pencarian atau traversing struktur data seperti graf.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Algoritma Backtracking:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Stack dapat digunakan dalam algoritma backtracking untuk mencoba semua kemungkinan solusi dalam suatu masalah dan mem-backtrack jika solusi yang sedang diuji tidak memenuhi kriteria.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Rekursi:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Pemanggilan fungsi rekursif juga dapat diimplementasikan menggunakan stack. Setiap panggilan fungsi rekursif menambahkan informasi ke dalam stack, dan ketika panggilan rekursif selesai, informasi itu dihapus dari stack.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Pelacakan Jalur dalam Algoritma Maze Solving:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Saat mencari jalur melalui labirin, stack dapat digunakan untuk melacak jalur yang telah diambil, sehingga jika mencapai buntu, kita dapat kembali ke keputusan sebelumnya dan mencoba jalur alternatif.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Eksekusi Algoritma Depth-First Search (DFS):</h3>
+                        </div>
+                    </div>
+                    <p class="lead">DFS pada graf dapat diimplementasikan menggunakan stack. Stack digunakan untuk melacak node yang akan dieksplorasi selanjutnya.</p>
+                </li>
+            </ul>
+            <p class="lead">Penggunaan stack tidak terbatas pada daftar di atas; struktur data ini dapat menjadi alat yang sangat berguna dalam banyak konteks pemrograman dan algoritma.
+
+            </p>
+            <p class="lead">Notasi infix dan postfix adalah dua cara berbeda untuk mengekspresikan ekspresi matematika.</p>
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="display-2">Notasi Infix:</h3>
+                </div>
+            </div>
+            <p class="lead">Definisi: Notasi infix adalah cara konvensional untuk mengekspresikan ekspresi matematika di mana operator ditempatkan di antara operand-operand.</p>
+            <p class="lead">Contoh: Ekspresi infix umumnya ditulis sebagai a + b * c, di mana operator + berada di antara operand a dan hasil perkalian b * c.</p>
+            <p class="lead">Sifat: Notasi infix mengikuti aturan konvensional matematika dan memerlukan penggunaan tanda kurung untuk menentukan urutan operasi yang benar.</p>
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="display-2">Notasi Postfix:</h3>
+                </div>
+            </div>
+            <p class="lead">Definisi: Notasi postfix (juga dikenal sebagai notasi posfiks atau notasi terbalik) adalah cara alternatif untuk mengekspresikan ekspresi matematika di mana operator ditempatkan setelah operand-operand.</p>
+            <p class="lead">Contoh: Ekspresi postfix yang setara dengan contoh infix di atas adalah a b c * +.</p>
+            <p class="lead">Sifat: Notasi postfix memiliki keunggulan bahwa tidak memerlukan penggunaan tanda kurung atau kejelasan urutan operasi, karena urutannya sudah diimplikasikan oleh posisi operator.</p>
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="display-2">Notasi Postfix:</h3>
+                </div>
+            </div>
+            <p class="lead">Proses konversi ekspresi dari notasi infix ke postfix melibatkan penggunaan stack untuk menyusun ekspresi baru. Beberapa langkah umumnya termasuk:</p>
+            <p class="lead">Membaca simbol demi simbol dari kiri ke kanan.</p>
+            <p class="lead">Jika simbol adalah operand, langsung tambahkan ke ekspresi postfix.</p>
+            <p class="lead">Jika simbol adalah operator, dorong ke stack dengan beberapa aturan prioritas operator</p>
+            <p class="lead">Jika simbol adalah tanda kurung, tambahkan atau keluarkan operator dari stack hingga tanda kurung seimbang.</p>
+            <p class="lead">Setelah semua simbol dibaca, keluarkan operator yang tersisa dari stack.</p>
+            <p class="lead">Contoh konversi infix ke postfix:</p>
+            <p class="lead">Infix: a + b * c</p>
+            <p class="lead">Postfix: a b c * +</p>
+            <img src="gambar/stack/stack3.PNG" class="img-fluid" alt="gambar binaryTree">
+            <p class="lead">Transformasi dari notasi infix ke postfix melibatkan sejumlah aturan dan strategi. Berikut adalah aturan-aturan umum yang diterapkan selama proses transformasi infix ke postfix:</p>
+            <ul>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Prioritas Operator:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Operator-operator memiliki prioritas yang berbeda. Operator dengan prioritas lebih tinggi akan ditempatkan lebih dekat dengan operand dalam notasi postfix.</p>
+                    <p class="lead">Contoh: Dalam ekspresi a + b * c, operator * memiliki prioritas lebih tinggi daripada +, sehingga dalam postfix, b dan c akan lebih dekat dengan * daripada dengan +.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Tanda Kurung:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Tanda kurung digunakan untuk menentukan urutan operasi. Operasi di dalam tanda kurung dievaluasi lebih dahulu.Selama konversi, tanda kurung dapat mempengaruhi penempatan operator dalam postfix.</p>
+                    
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Asosiativitas Operator:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Asosiativitas operator menentukan arah evaluasi ketika ada dua atau lebih operator dengan prioritas yang sama.</p>
+                    <p class="lead">Operator matematika umumnya bersifat kiri-ke-kanan, artinya jika dua operator memiliki prioritas yang sama, yang muncul lebih awal dalam ekspresi infix akan ditempatkan lebih dekat dengan operand dalam postfix.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Kombinasi Tanda Kurung dan Operator:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Jika tanda kurung membungkus operasi yang memiliki prioritas lebih tinggi daripada operasi di luar tanda kurung, maka operasi dalam tanda kurung akan dievaluasi lebih dahulu.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Menjaga Urutan Operand:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Urutan operand tetap sama dalam ekspresi infix dan postfix, hanya urutan operator yang dapat berubah.</p>
+                    
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Penanganan Tanda Kurung:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Saat menemui tanda kurung buka, dorong ke dalam stack.</p>
+                    <p class="lead">Saat menemui tanda kurung tutup, keluarkan operator dari stack hingga tanda kurung buka, dan tambahkan ke postfix.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Penanganan Operator:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Saat menemui operator, keluarkan operator dari stack hingga operator pada stack memiliki prioritas lebih rendah daripada atau sama dengan operator saat ini, atau stack kosong.</p>
+                    <p class="lead">Setelah itu, dorong operator saat ini ke stack.</p>
+                </li>
+                <li class="lead"> 
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="display-2">Penanganan Operand:</h3>
+                        </div>
+                    </div>
+                    <p class="lead">Saat menemui operand, tambahkan ke ekspresi postfix.</p>
+                    
+                </li>
+            </ul>
+
+            <p class="lead">Proses transformasi infix ke postfix menggunakan stack untuk melacak operator dan operand. Aturan-aturan di atas membantu dalam menentukan urutan penempatan operator dan operand dalam ekspresi postfix sehingga dapat memberikan hasil yang benar.</p>
+        </div>
+    </section>
+
+
+    <script src="boostarp/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
