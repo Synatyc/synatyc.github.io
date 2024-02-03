@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1">Queue</h1>
+                <blockquote class="blockquote">
+                    <p>Pernahkah kamu penasaran bagaimana sistem notifikasi di aplikasi yang kamu gunakan bekerja di balik layar? Dalam banyak aplikasi, pesan atau notifikasi sering kali harus diantrekan dan diurutkan sesuai dengan urutan kirim atau prioritas. Proses tersebut umumnya menggunakan struktur data queue. Dalam artikel ini, kita akan membahas apa itu queue beserta dengan contoh sederhana penerapannya.</p>
+                  </blockquote>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Pengertian Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Queue atau dalam bahasa Indonesia yang berarti antrean adalah struktur data yang menyusun elemen-elemen data dalam urutan linier. Prinsip dasar dari struktur data ini adalah “First In, First Out” (FIFO) yang berarti elemen data yang pertama dimasukkan ke dalam antrean akan menjadi yang pertama pula untuk dikeluarkan.</p>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Prinsip FIFO pada Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Caranya bekerja adalah seperti jejeran orang yang sedang menunggu antrean di supermarket di mana orang pertama yang datang adalah yang pertama dilayani (First In, First Out). Pada struktur data ini, urutan pertama (data yang akan dikeluarkan) disebut Front atau Head. Sebaliknya, data pada urutan terakhir (data yang baru saja ditambahkan) disebut Back, Rear, atau Tail. Proses untuk menambahkan data pada antrean disebut dengan Enqueue, sedangkan proses untuk menghapus data dari antrean disebut dengan Dequeue. </p>
+            <img src="gambar/Queue/queue data structure.png" class="img-fluid" alt="gambar binaryTree">
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2">Fungsi Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Queue memiliki peran yang penting dalam berbagai aplikasi dan algoritma. Salah satu fungsi utamanya adalah mengatur dan mengelola antrean tugas atau operasi secara efisien. Dalam sistem komputasi, ia digunakan untuk menangani tugas-tugas seperti penjadwalan proses, antrean pesan, dan manajemen sumber daya.</p>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2">Jenis-jenis Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Jenis struktur data ini dapat diklasifikasikan berdasarkan cara implementasinya, maupun berdasarkan penggunaannya. Di antara jenis-jenis tersebut adalah sebagai berikut.</p>
+            <ol>
+                <li class="lead">Berdasarkan Implementasinya
+                    <ul>
+                        <li class="lead">Linear/Simple Queue
+                            <p class="lead">Elemen-elemen data disusun dalam barisan linear dan penambahan serta penghapusan elemen hanya terjadi pada dua ujung barisan tersebut.</p>
+                            <img src="gambar/Queue/simple queue.webp">
+
+                        </li>
+                        <li class="lead">Circular Queue
+                            <p class="lead">Mirip dengan jenis linear, tetapi ujung-ujung barisan terhubung satu sama lain, menciptakan struktur antrean yang berputar.</p>
+                            <img src="gambar/Queue/circular-queue.webp">
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="lead">Berdasarkan Penggunaan
+                    <ul>
+                        <li class="lead">Priority Queue
+                            <p class="lead"> Setiap elemen memiliki prioritas tertentu. Elemen dengan prioritas tertinggi akan diambil terlebih dahulu.</p>
+                            <img src="gambar/Queue/priority-queue.webp">
+
+                        </li>
+                        <li class="lead">Double-ended Queue (Dequeue)
+                            <p class="lead">Elemen dapat ditambahkan atau dihapus dari kedua ujung antrean.</p>
+                            <img src="gambar/Queue/double ended queue.webp">
+
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2">Keuntungan dan Keterbatasan</h2>
+                </div>
+            </div>
+            <p class="lead">Meskipun struktur data queue memiliki banyak kegunaan, kamu juga harus mengetahui beberapa keuntungan dan keterbatasan yang perlu diperhatikan sebelum menggunakannya.</p>
+            <ol>
+                <li class="lead">Keuntungan
+                    <ul>
+                        <li class="lead"><p class="lead">Data berjumlah besar dapat dikelola dengan mudah dan efisien.</p>
+                        </li>
+                        <li class="lead"><p class="lead">Proses insert dan delete data dapat dilakukan dengan mudah karena mengikuti aturan first in first out (FIFO).</p>
+                        </li>
+                        <li class="lead"><p class="lead">Efisien dalam menangani tugas berdasarkan urutan kedatangan.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lead">Keterbatasan
+                    <ul>
+                        <li class="lead"><p class="lead"> Tidak efisien untuk pencarian elemen tertentu dalam antrean.</p>
+                        </li>
+                        <li class="lead">
+                            <p class="lead">Memerlukan alokasi memori yang cukup untuk menyimpan antrean.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Operasi Dasar Struktur Data Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Secara umum, struktur data queue memiliki 2 operasi utama, yaitu enqueue dan dequeue. Namun, ada beberapa struktur data abstrak lainnya yang dapat terjadi pada operasi tersebut, diantaranya adalah :</p>
+            <ol>
+                <li class="lead">Enqueue,
+                    <p class="lead">untuk menambahkan elemen ke akhir antrian</p>
+                </li>
+                <li class="lead">Dequeue
+                    <p class="lead"> untuk menghapus elemen dari depan antrian</p>
+                </li>
+                <li class="lead">IsEmpty
+                    <p class="lead">untuk memeriksa ada tidaknya antrian kosong</p>
+                </li>
+                <li class="lead">IsFull
+                    <p class="lead">untuk memeriksa kepenuhan antrian</p>
+                </li>
+                <li class="lead">Peek
+                    <p class="lead">untuk mendaptkan nilai bagian depan antrian tanpa menghapusnya</p>
+                </li>
+                <li class="lead">Initialize
+                    <p class="lead">untuk membuat antrian baru tanpa elemen data</p>
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Fungsi Struktur Data Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Beberapa fungsi umum dari struktur data queue adalah sebagai berikut, yaitu :</p>
+            <ol>
+                <li class="lead">Untuk menangani lalu lintas di situs website</li>
+                <li class="lead">Untuk mempertahankan playlist pada aplikasi media player</li>
+                <li class="lead">Untuk menangani interupsi pada sistem operasi</li>
+                <li class="lead">Untuk melayani banyak permintaan pada satu sumber daya bersama, misalnya printer dan penjadwalan tugas CPU</li>
+                <li class="lead">Untuk mentransfer data asinkronus, misalnya pipeline, IO file, dan socket</li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Contoh Struktur Data Queue</h2>
+                </div>
+            </div>
+            <p class="lead">Struktur data queue dapat anda lihat terapannya pada kehidupan sehari-hari, misalnya saat melakukan pembelian tiket kereta api, tiket bioskop, tiket kapal laut, pembayaran listrik, pembayaran air, dan sebagainya. Misalnya saja dalam pembelian tiket di bioskop, dimana :</p>
+            <ol>
+                <li class="lead">Enqueue diibaratkan seperti seseorang yang ingin membeli tiket bioskop di loket tiket</li>
+                <li class="lead">Dequeue diibaratkan seperti seseorang yang sudah membeli tiket bioskop dan menuju studio filmnya untuk dilakukan pemeriksaan tiket</li>
+                <li class="lead">Clear diibaratkan seperti petugas yang menghapus tiket dari antrian karena sudah melewati waktu menonton atau waktu pembayaran administrasi</li>
+                <li class="lead">IsEmpty diibaratkan seperti petugas yang melihat keadaan sekitar bahwa sudah tidak ada lagi pengunjung yang ingin membeli tiket</li>
+                <li class="lead">IsFull diibaratkan seperti petugas melihat masih ada pembeli yang ingin mendapatkan tiket bioskop</li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Kesimpulan</h2>
+                </div>
+            </div>
+            <p class="lead">Pemahaman tentang struktur data queue menjadi kunci untuk mengoptimalkan efisiensi dan kinerja aplikasi. Artikel ini telah menjelaskan bahwa ia adalah struktur data yang mengatur elemen-elemen data dengan prinsip “First In, First Out” (FIFO), serupa dengan antrean di kehidupan sehari-hari. Kita juga telah mempelajari fungsi, jenis-jenis, beserta kekurangan dan kelebihannya.</p>
+            <p class="lead">Kita juga telah melihat contoh implementasi sederhananya, memperlihatkan bagaimana struktur data ini dapat digunakan dalam konteks antrean pelanggan pada kasir. Dengan pemahaman ini, semoga kamu dapat mengimplementasikan konsep struktur data yang tepat dalam proyek-proyek aplikasi yang kamu kembangkan sehingga dapat meningkatkan efisiensi aplikasi dan juga menjadi seorang Software Engineer yang lebih andal.</p>
+        </div>
+    </section>
+
+
+
+
+    
+    <script src="boostarp/js/bootstrap.min.js"></script> 
+    
+</body>
+</html>
