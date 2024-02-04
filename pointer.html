@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1">POINTER</h1>
+                </div>
+            </div>
+            <p class="lead">Variabel pointer sering disebut sebagai variabel yang menunjuk obyek lain, 
+                karena variabel pointer atau pointer adalah variabel yang berisi alamat di memori 
+                komputer dari suatu obyek lain, yaitu obyek yang ditunjuk oleh pointer yang mempunyai 
+                nilai tertentu</p>
+        </div>
+    </section>
+    <section class="content ">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Bentuk umum deklarasi variable pointer :</h2>
+                </div>
+            </div>
+            <img src="gambar/Pointer/pointer.PNG "class="img-fluid" alt="gambar binaryTree">
+            <ul>
+                <p class="lead">Dengan :
+                    <li class="lead">tipedata adalah tipe dasar nilai yang berada di memori yang ditunjuk oleh pointer.
+                    </li>
+                    <li class="lead">nama_pointer adalah nama variable pointer.</li>
+                    <li class="lead">(*) adalah operator memori yang fungsinya untuk mengembalikan nilai variable pada 
+                        alamatnya yang ditentukan oleh operand</li>
+                    <li class="lead">malloc(size_t size) adalah deklarasi pengalokasian memori kosong dengan 
+                        ukuran kapasitas sebesar size</li>
+                </p>
+            </ul>
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Ilusttrasi</h2>
+                </div>
+            </div>
+            
+            <img src="gambar/Pointer/pointer 1.PNG "class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 2.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 3.PNG"class="img-fluid" alt="gambar binaryTree">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2">Pengaksesan dengan Pointer</h2>
+                </div>
+            </div>
+            <p class="lead">Untuk mengakses nilai/isi pada memori yang ditunjuk oleh pointer dipakai simbol ‘*’</p>
+            <p class="lead">Contoh :
+            </p>
+            <p class="lead">*p = 10; </p>
+            <p class="lead">*q = 20;</p>
+            <p class="lead">Pointer menunjuk memori yang ditunjuk pointer lain :</p>
+            <p class="lead">Contoh :</p>
+            <p class="lead">p = q;</p>
+            <p class="lead">berarti p menunjuk ke alamat memori yang ditunjuk oleh q, dan dengan demikian p dan q 
+            menunjuk alamat memori yang sama</p>
+            <img src="gambar/Pointer/pointer 4.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 5.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/ponter 6.PNG"class="img-fluid" alt="gambar binaryTree">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2">Operator Pointer</h2>
+                </div>
+            </div>
+            <ol>
+                <p class="lead">Ada beberapa operator yang bisa digunakan dalam pointer, yaitu :</p>
+                <li class="lead">
+                    1. O</li>
+                <li class="lead">Operator unary yang mengembalikan alamat dari operandnya</li>
+            </ol>
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="display-2">Operator Pointer</h3>
+                </div>
+            </div>
+            <p class="lead">Misalkan px adalah variabel bertipe pointer yang akan berisi alamat variabel lain 
+                yang bertipe integer, maka dideklarasikan :</p>
+            <p class="lead">int x;
+            </p>
+            <p class="lead">int *px;</p>
+            <p class="lead">Untuk mengatur pointer agar menunjuk ke variabel lain, mula-mula pointer harus diisi dengan alamat dari variabel yang akan ditunjuk. </p>
+            <p class="lead">Operator ‘&’ digunakan untuk menyatakan alamat variabel statis yang akan ditunjuk.</p>
+            <img src="gambar/Pointer/pointer 7.PNG"class="img-fluid" alt="gambar binaryTree">
+            <p class="lead">Jika suatu variabel statis sudah ditunjuk oleh pointer, isi variabel tersebut dapat diakses melalui variabel itu sendiri (pengaksesan langsung) atau melalui pointer (pengaksesan  tidak langsung).</p>
+            <p class="lead">Pengaksesan langsung dilakukan langsung oleh variabel statisnya (bukan pointernya).</p>
+            <p class="lead">Contoh :</p>
+            <p class="lead">x = 10</p>
+            <p class="lead">Operator indirection (pengaksesan tidak langsung), berupa simbol ‘*’</p>
+            <p class="lead">Contoh :</p>
+            <p class="lead">*px = 10</p>
+            <img src="gambar/Pointer/pointer 8.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 9.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 10.PNG"class="img-fluid" alt="gambar binaryTree">
+            <br></br>
+            <img src="gambar/Pointer/pointer 11.PNG"class="img-fluid" alt="gambar binaryTree">
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="boostarp/js/bootstrap.min.js"></script> 
+
+    
+</body>
+</html>

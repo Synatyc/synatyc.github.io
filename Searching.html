@@ -65,11 +65,11 @@
                     </ul>
                 </li>
                 <li class="lead">Interpolation Search
-                    <img src="gambar/searching algoritma/interpolation searching.png">
+                    <img src="gambar/searching algoritma/interpolation searching.png" class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Algoritma interpolation search digunakan pada list atau array yang memiliki data terurut dan merata. Algoritma ini bekerja dengan menggunakan estimasi posisi data yang dicari berdasarkan data terkecil dan terbesar pada list atau array.</p>
                     <p class="lead">Algoritma ini akan mencari data pada posisi yang diperkirakan secara proporsional terhadap data terbesar dan terkecil. Interpolation search dapat lebih cepat daripada binary search jika data yang dicari terdistribusi secara merata, namun jika data tidak merata, algoritma ini mungkin tidak lebih baik dari binary search.</p>
                     <p class="lead"> pada binary search interpolation ini mencari data dengan menggunakan Formula, yaitu sebagai berikut:</p>
-                    <img src="gambar/searching algoritma/interpolation formula.png">
+                    <img src="gambar/searching algoritma/interpolation formula.png" class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">pos = low + ((cari - data[low]) * (high - low) / </p>
                     <p class="lead">(data[high] - data[low]))</p>
                     <ul>
@@ -85,11 +85,11 @@
                     <h3 class="lead">
                         Ilustrasi Agloritma Interpolation Search</h3>
                     <p class="lead">Pada ilustrasi digambarkan sebuah array yang menampung 10 elemen secara terurut. Kita akan mencoba mencari nilai 19 pada array dengan menggunakan pencarian interpolasi</p>
-                    <img src="gambar/searching algoritma/ilustrasi interpolation.png">
+                    <img src="gambar/searching algoritma/ilustrasi interpolation.png"class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Selanjutnya kita akan mendefinisikan beberapa variabel dengan nilainya yang kita dapat dari ilustrasi sebelumnya. Lalu kita masukkan setiap nilai tersebut ke formula pencarian interpolasi. Maka didapatlah hasil 5,27 dan kita bulatkan menjadi 5.</p>
-                    <img src="gambar/searching algoritma/ilustrasi interpolation 2.png">
+                    <img src="gambar/searching algoritma/ilustrasi interpolation 2.png"class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Setelah mendapatkan indeks pos, maka kemudian kita gunakan untuk mencari dimana angka 19 berada. Seperti yang dapat dilihat pada Pseudo Code, maka kita akan mengecek menggunakan pernyataan if else apakah nilai yang dicari > nilai pada indeks pos. Kita cek apakah 19 > 15 ? ternyata benar maka nilai pos + 1 menjadi 6. Kemudian terjadi perulangan dan terdapat pengecekan kondisi while. Setelah dicek lagi ternyata nilai yang dicari yaitu 19 sama dengan nilai pada indeks ke-6, maka nilai yang dicari telah ditemukan dan proses pencarian pun selesai.</p>
-                    <img src="gambar/searching algoritma/ilustrasi interpolation 3.png">
+                    <img src="gambar/searching algoritma/ilustrasi interpolation 3.png"class="img-fluid" alt="gambar binaryTree">
                 </li>
                 <li class="lead">Hash Search
                     <p class="lead">Algoritma hash search digunakan pada struktur data hash table. Algoritma ini bekerja dengan memetakan data ke dalam index pada hash table. Setelah data dimasukkan ke dalam hash table, pencarian data hanya membutuhkan waktu konstan, yaitu O(1). Algoritma ini sangat cepat dan efisien, namun memerlukan proses pembuatan hash table yang memakan waktu dan memerlukan alokasi memori yang cukup besar.</p>
@@ -106,7 +106,7 @@
                     <p class="lead">Dalam memilih jenis algoritma pencarian, sangat penting untuk mempertimbangkan kompleksitas waktu dan ruang, serta karakteristik dari data yang akan dicari. Setiap jenis algoritma memiliki kelebihan dan kekurangan masing-masing, sehingga pilihan tergantung pada kebutuhan aplikasi yang digunakan.</p>
                 </li>
                 <li class="lead">Sequential Search
-                    <img src="gambar/searching algoritma/sequential searching.png">
+                    <img src="gambar/searching algoritma/sequential searching.png"class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Algoritma pencarian Sekuensial adalah salah satu algoritma pencarian data yang biasa digunakan untuk data yang berpola acak atau belum terurut. Algoritma ini akan mencari data sesuai kata kunci yang diberikan mulai dari elemen awal pada array hingga elemen akhir array. Kemungkinan terbaik (best case) ketika menggunakan algoritma ini adalah jika data yang dicari terletak di indeks awal array sehingga hanya membutuhkan sedikit waktu pencarian. Sedangkan kemungkinan terburuknya (worst case) adalah jika data yang dicari ternyata terletak dibagian akhir dari array sehingga pencarian data akan memakan waktu yang lama.</p>
                     <ul>Konsep Pencarian Sekuensial:
                         <li class="lead">Membandingkan setiap elemen pada array satu per satu secara berurut</li>
@@ -116,9 +116,9 @@
                     </ul>
                     
                     Ilustrasi Sequential Search
-                    <img src="gambar/searching algoritma/ilustrasi squential 1.png">
+                    <img src="gambar/searching algoritma/ilustrasi squential 1.png"class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensial. Algoritma ini mencari angka 2 dengan mengecek setiap elemen pada array. Ketika sudah ditemukan maka proses pencarian dapat diakhiri.</p>
-                    <img src="gambar/searching algoritma/ilustrasi squential 2.png">
+                    <img src="gambar/searching algoritma/ilustrasi squential 2.png"class="img-fluid" alt="gambar binaryTree">
                     <p class="lead">Ilustrasi kedua mirip dengan sebelumnya, perbedaannya yaitu ilustrasi di atas menghitung berapa banyak angka yang dicari muncul pada data, sedangkan ilustrasi sebelumnya akan menghentikan pencarian ketika data yang dicari berhasil ditemukan.</p>
                     <p class="lead">Pemilihan algoritma ini dapat disesuaikan dengan kebutuhan program kita. Jika kita butuh untuk menghitung berapa banyak angka tersebut muncul pada suatu data, maka kita dapat menggunakan yang seperti ilustrasi kedua.</p>
                 </li>
