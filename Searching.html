@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="boostarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="binaryTree.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation synatyc">
+            <h1><a href="">synatyc</a></h1>
+        </div>
+        <div class="navigation Home">
+            <h1 ><a href="index.html">Home</a></h1>
+        </div>
+
+        <div class="navigation Profile">
+            <h1 ><a href="">Profile</a></h1>
+        </div>
+
+        <div class="navigation Data">
+            <h1 ><a href="">Data Book</a></h1>
+        </div>
+    </div>
+    <section class="content ">
+        <div class="container-sm">
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="display-1">SEARCHING</h1>
+                </div>
+            </div>
+            <p class="lead">Algoritma pencarian adalah serangkaian langkah atau instruksi yang digunakan untuk mencari suatu data atau informasi tertentu dalam struktur data seperti array, list, tree, atau database. Tujuan dari algoritma pencarian adalah untuk menemukan posisi atau keberadaan data yang dicari dalam struktur data dengan cara yang efisien dan efektif.</p>
+            <p class="lead">Algoritma pencarian digunakan pada berbagai jenis aplikasi, seperti mesin pencari, permainan, dan aplikasi bisnis. Pemahaman tentang algoritma pencarian sangat penting dalam ilmu komputer karena dapat membantu dalam pemecahan masalah dan pengembangan aplikasi.</p>
+        </div>
+    </section>
+    <section class="content ">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Jenis Algoritma Pencarian</h2>
+                </div>
+            </div>
+            <p class="lead">Ada beberapa jenis algoritma pencarian yang umum digunakan di antaranya:</p>
+            <ol>
+                <li class="lead">Linear Search
+                    <p class="lead">Algoritma ini sangat sederhana dan mudah dipahami. Algoritma linear search bekerja dengan cara membandingkan setiap elemen pada list atau array secara berurutan hingga data yang dicari ditemukan atau seluruh elemen sudah dibandingkan.</p>
+                    <p class="lead">Algoritma ini cocok digunakan untuk data yang jumlahnya tidak terlalu besar. Namun, jika data yang dicari berada di posisi akhir atau tidak terdapat dalam list atau array, algoritma ini akan membutuhkan waktu yang lama untuk menyelesaikan pencarian.</p>
+                </li>
+                <li class="lead">Binary Search
+                    <p class="lead">Algoritma binary search digunakan untuk mencari data pada list atau array yang sudah terurut. Algoritma ini bekerja dengan membandingkan nilai data yang dicari dengan nilai tengah list atau array. Jika nilai data yang dicari lebih besar dari nilai tengah, maka algoritma akan mencari pada setengah kanan list atau array, dan begitu juga sebaliknya. Binary search memiliki kompleksitas waktu yang lebih baik dibandingkan dengan linear search, namun hanya dapat digunakan pada data yang sudah teruru</p>
+                    <ul>
+                        <p class="lead">Cara Kerja Binary Search</p>
+                        <li class="lead">Pertama, pastikan himpunan data terurut secara teratur. Binary search hanya efektif jika himpunan data sudah diurutkan.</li>
+                        <li class="lead">Tentukan batas awal dan batas akhir dari himpunan data. Batas awal biasanya diatur sebagai indeks pertama (0) dan batas akhir sebagai indeks terakhir (n-1), dengan n adalah jumlah elemen dalam himpunan data.</li>
+                        <li class="lead">Hitung elemen tengah himpunan data. Ini dilakukan dengan mengambil rata-rata batas awal dan batas akhir, yaitu (batas awal + batas akhir) / 2.</li>
+                        <li class="lead">Bandingkan elemen tengah dengan elemen yang dicari. Jika elemen tengah sama dengan elemen yang dicari, pencarian selesai dan elemen ditemukan.</li>
+                        <li class="lead">Jika elemen tengah lebih besar dari elemen yang dicari, maka pindahkan batas akhir menjadi satu posisi sebelum elemen tengah. Ini berarti kita akan mencari di bagian sebelumnya dari himpunan data.</li>
+                        <li class="lead">Jika elemen tengah lebih kecil dari elemen yang dicari, maka pindahkan batas awal menjadi satu posisi setelah elemen tengah. Ini berarti kita akan mencari di bagian setelahnya dari himpunan data.</li>
+                        <li class="lead">Ulangi langkah-langkah 3 hingga 6 dengan memperbarui batas awal dan batas akhir. Proses ini berlanjut sampai elemen yang dicari ditemukan atau tidak ada lagi elemen yang perlu diperiksa.</li>
+                        <li class="lead">Jika elemen yang dicari tidak ditemukan setelah seluruh himpunan data diperiksa, berarti elemen tersebut tidak ada dalam himpunan data.</li>
+                        <li class="lead">Binary search bekerja dengan membagi himpunan data menjadi dua bagian pada setiap langkahnya. Hal ini mengurangi jumlah elemen yang perlu diperiksa secara eksponensial, sehingga mencapai efisiensi yang tinggi. Kompleksitas waktu dari binary search adalah O(log n), di mana n adalah jumlah elemen dalam himpunan data.</li>
+                    </ul>
+                </li>
+                <li class="lead">Interpolation Search
+                    <img src="gambar/searching algoritma/interpolation searching.png">
+                    <p class="lead">Algoritma interpolation search digunakan pada list atau array yang memiliki data terurut dan merata. Algoritma ini bekerja dengan menggunakan estimasi posisi data yang dicari berdasarkan data terkecil dan terbesar pada list atau array.</p>
+                    <p class="lead">Algoritma ini akan mencari data pada posisi yang diperkirakan secara proporsional terhadap data terbesar dan terkecil. Interpolation search dapat lebih cepat daripada binary search jika data yang dicari terdistribusi secara merata, namun jika data tidak merata, algoritma ini mungkin tidak lebih baik dari binary search.</p>
+                    <p class="lead"> pada binary search interpolation ini mencari data dengan menggunakan Formula, yaitu sebagai berikut:</p>
+                    <img src="gambar/searching algoritma/interpolation formula.png">
+                    <p class="lead">pos = low + ((cari - data[low]) * (high - low) / </p>
+                    <p class="lead">(data[high] - data[low]))</p>
+                    <ul>
+                        <p class="lead">Keterangan Variabel:</p>
+                        <li class="lead">pos : variabel yang digunakan untuk menampung indeks atau posisi dimana program akan mencari data</li>
+                        <li class="lead">key : variabel yang berisi data atau nilai yang dicari</li>
+                        <li class="lead">data : array yang menyimpan banyak nilai dengan tipe yang sama sekaligus</li>
+                        <li class="lead">low : variabel yang menampung indeks paling awal pada array (indeks 0)</li>
+                        <li class="lead">high : variabel yang menampung indeks terakhir dari array (indeks n-1)</li>
+                        <li class="lead">data[low] : nilai pada indeks low</li>
+                        <li class="lead">data[high] : nilai pada indeks high</li>
+                    </ul>
+                    <h3 class="lead">
+                        Ilustrasi Agloritma Interpolation Search</h3>
+                    <p class="lead">Pada ilustrasi digambarkan sebuah array yang menampung 10 elemen secara terurut. Kita akan mencoba mencari nilai 19 pada array dengan menggunakan pencarian interpolasi</p>
+                    <img src="gambar/searching algoritma/ilustrasi interpolation.png">
+                    <p class="lead">Selanjutnya kita akan mendefinisikan beberapa variabel dengan nilainya yang kita dapat dari ilustrasi sebelumnya. Lalu kita masukkan setiap nilai tersebut ke formula pencarian interpolasi. Maka didapatlah hasil 5,27 dan kita bulatkan menjadi 5.</p>
+                    <img src="gambar/searching algoritma/ilustrasi interpolation 2.png">
+                    <p class="lead">Setelah mendapatkan indeks pos, maka kemudian kita gunakan untuk mencari dimana angka 19 berada. Seperti yang dapat dilihat pada Pseudo Code, maka kita akan mengecek menggunakan pernyataan if else apakah nilai yang dicari > nilai pada indeks pos. Kita cek apakah 19 > 15 ? ternyata benar maka nilai pos + 1 menjadi 6. Kemudian terjadi perulangan dan terdapat pengecekan kondisi while. Setelah dicek lagi ternyata nilai yang dicari yaitu 19 sama dengan nilai pada indeks ke-6, maka nilai yang dicari telah ditemukan dan proses pencarian pun selesai.</p>
+                    <img src="gambar/searching algoritma/ilustrasi interpolation 3.png">
+                </li>
+                <li class="lead">Hash Search
+                    <p class="lead">Algoritma hash search digunakan pada struktur data hash table. Algoritma ini bekerja dengan memetakan data ke dalam index pada hash table. Setelah data dimasukkan ke dalam hash table, pencarian data hanya membutuhkan waktu konstan, yaitu O(1). Algoritma ini sangat cepat dan efisien, namun memerlukan proses pembuatan hash table yang memakan waktu dan memerlukan alokasi memori yang cukup besar.</p>
+                </li>
+                <li class="lead">Exponential Search
+                    <p class="lead">Algoritma exponential search digunakan pada list atau array yang tidak terurut, namun harus memiliki ukuran yang cukup besar. Algoritma ini bekerja dengan mencari range atau jangkauan tempat data yang dicari berada, kemudian melakukan binary search pada jangkauan tersebut. Algoritma ini memanfaatkan fakta bahwa jika data yang dicari berada pada jangkauan yang cukup besar, maka binary search akan lebih cepat daripada linear search.</p>
+                </li>
+                <li class="lead">Jump Search
+                    <p class="lead">Algoritma jump search mirip dengan algoritma exponential search, namun menggunakan teknik “jump” untuk mencari jangkauan yang memungkinkan data yang dicari berada di dalamnya.</p>
+                    <p class="lead">Algoritma ini bekerja dengan membagi list atau array menjadi beberapa blok atau segmen, kemudian melakukan “jump” atau melompat dari segmen ke segmen untuk mencari jangkauan yang memungkinkan data yang dicari berada di dalamnya. Setelah ditemukan jangkauan tersebut, dilakukan linear search pada jangkauan tersebut.</p>
+                </li>
+                <li class="lead">Ternary Search
+                    <p class="lead">Algoritma ternary search digunakan pada list atau array yang sudah terurut dan memiliki data yang merata. Algoritma ini bekerja dengan membagi list atau array menjadi tiga bagian, kemudian mencari pada bagian mana data yang dicari berada. Algoritma ini menggunakan teknik rekursif dan memerlukan tiga panggilan rekursif untuk menyelesaikan pencarian. Algoritma ini sangat efisien untuk mencari data pada list atau array yang memiliki data terurut dan merata.</p>
+                    <p class="lead">Dalam memilih jenis algoritma pencarian, sangat penting untuk mempertimbangkan kompleksitas waktu dan ruang, serta karakteristik dari data yang akan dicari. Setiap jenis algoritma memiliki kelebihan dan kekurangan masing-masing, sehingga pilihan tergantung pada kebutuhan aplikasi yang digunakan.</p>
+                </li>
+                <li class="lead">Sequential Search
+                    <img src="gambar/searching algoritma/sequential searching.png">
+                    <p class="lead">Algoritma pencarian Sekuensial adalah salah satu algoritma pencarian data yang biasa digunakan untuk data yang berpola acak atau belum terurut. Algoritma ini akan mencari data sesuai kata kunci yang diberikan mulai dari elemen awal pada array hingga elemen akhir array. Kemungkinan terbaik (best case) ketika menggunakan algoritma ini adalah jika data yang dicari terletak di indeks awal array sehingga hanya membutuhkan sedikit waktu pencarian. Sedangkan kemungkinan terburuknya (worst case) adalah jika data yang dicari ternyata terletak dibagian akhir dari array sehingga pencarian data akan memakan waktu yang lama.</p>
+                    <ul>Konsep Pencarian Sekuensial:
+                        <li class="lead">Membandingkan setiap elemen pada array satu per satu secara berurut</li>
+                        <li class="lead">Proses pencarian dimulai dari indeks pertama hingga indeks terakhir</li>
+                        <li class="lead">Proses pencarian akan berhenti apabila data ditemukan. Jika hingga akhir array data masih juga tidak ditemukan, maka proses pencarian tetap akan dihentikan</li>
+                        <li class="lead">Proses perulangan pada pencarian akan terjadi sebanyak jumlah N elemen pada array</li>
+                    </ul>
+                    
+                    Ilustrasi Sequential Search
+                    <img src="gambar/searching algoritma/ilustrasi squential 1.png">
+                    <p class="lead">Ilustrasi di atas menunjukkan bagaimana proses dari algoritma pencarian Sekuensial. Algoritma ini mencari angka 2 dengan mengecek setiap elemen pada array. Ketika sudah ditemukan maka proses pencarian dapat diakhiri.</p>
+                    <img src="gambar/searching algoritma/ilustrasi squential 2.png">
+                    <p class="lead">Ilustrasi kedua mirip dengan sebelumnya, perbedaannya yaitu ilustrasi di atas menghitung berapa banyak angka yang dicari muncul pada data, sedangkan ilustrasi sebelumnya akan menghentikan pencarian ketika data yang dicari berhasil ditemukan.</p>
+                    <p class="lead">Pemilihan algoritma ini dapat disesuaikan dengan kebutuhan program kita. Jika kita butuh untuk menghitung berapa banyak angka tersebut muncul pada suatu data, maka kita dapat menggunakan yang seperti ilustrasi kedua.</p>
+                </li>
+            </ol>
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Karakteristik Algoritma Pencarian</h2>
+                </div>
+            </div>
+            <p class="lead">Berikut ini adalah beberapa karakteristik dari algoritma pencarian:</p>
+            <ol>
+                <li class="lead">Efisiensi
+                    <p class="lead">Algoritma pencarian harus memiliki kecepatan eksekusi yang efisien dalam mencari data pada list atau array yang besar. Algoritma yang efisien dapat menyelesaikan pencarian dalam waktu yang singkat, sehingga memungkinkan program atau sistem untuk bekerja lebih cepat dan efisien.</p>
+                </li>
+                <li class="lead"> Akurasi
+                    <p class="lead">Algoritma pencarian harus akurat dan dapat menemukan data yang dicari dengan tepat. Algoritma yang akurat akan menghasilkan data yang sesuai dengan kriteria pencarian, sehingga dapat dipercaya dan diandalkan.</p>
+                </li>
+                <li class="lead">Keamanan
+                    <p class="lead">Algoritma pencarian harus aman dan tidak merusak data yang sedang dicari. Algoritma yang aman tidak akan memodifikasi atau merusak data yang sedang dicari, sehingga data tersebut tetap dapat digunakan dan diakses dengan aman.</p>
+                </li>
+                <li class="lead">Modularitas
+                    <p class="lead">Algoritma pencarian harus mudah dimodifikasi dan diintegrasikan dengan program atau sistem yang lebih besar. Algoritma yang modular dapat dimodifikasi dengan mudah untuk memenuhi kebutuhan tertentu, dan dapat diintegrasikan dengan program atau sistem yang lebih besar tanpa memerlukan perubahan yang signifikan.</p>
+                </li>
+                <li class="lead">Scalability
+                    <p class="lead">Algoritma pencarian harus dapat menangani jumlah data yang semakin besar dengan baik. Algoritma yang scalable dapat menangani jumlah data yang semakin besar dengan baik tanpa mengalami penurunan performa atau kinerja.</p>
+                </li>
+                <li class="lead">Keterbacaan
+                    <p class="lead">Algoritma pencarian harus mudah dibaca dan dimengerti oleh programmer lain. Algoritma yang mudah dibaca dan dimengerti akan memudahkan programmer lain untuk memahami dan menggunakan algoritma tersebut, sehingga memungkinkan kolaborasi dan pengembangan yang lebih baik.</p>
+                </li>
+                <li class="lead">Sederhana
+                    <p class="lead">Algoritma pencarian sebaiknya sederhana dan tidak terlalu kompleks, sehingga dapat diimplementasikan dengan mudah. Algoritma yang sederhana akan memudahkan implementasi dan penggunaannya dalam program atau sistem.</p>
+                </li>
+            </ol>
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="display-2"> Istilah-istilah dalam Algoritma Pencarian</h2>
+                </div>
+            </div>
+            <p class="lead">Berikut adalah beberapa istilah dalam algoritma pencarian:</p>
+            <ol>
+                <li class="lead">Pencarian. Proses mencari nilai tertentu dalam suatu kumpulan data.</li>
+                <li class="lead">Kumpulan data. Sekumpulan nilai yang disimpan dalam suatu struktur data, seperti array, linked list, atau tree.</li>
+                <li class="lead">Indeks. Nomor posisi suatu nilai dalam kumpulan data.</li>
+                <li class="lead">Pencarian linear. Metode pencarian yang dilakukan dengan memeriksa setiap elemen kumpulan data secara berurutan.</li>
+                <li class="lead">Pencarian biner. Metode pencarian yang hanya dapat dilakukan pada kumpulan data yang sudah diurutkan. Proses pencarian dilakukan dengan membagi kumpulan data menjadi dua bagian dan mencari di bagian yang relevan dengan nilai yang dicari.</li>
+                <li class="lead">Fungsi pencarian. Fungsi yang digunakan untuk mencari suatu nilai dalam kumpulan data.</li>
+                <li class="lead">Kompleksitas waktu. Ukuran kompleksitas algoritma dalam hal waktu, yaitu seberapa cepat algoritma dapat menyelesaikan masalahnya.</li>
+                <li class="lead">kompleksitas ruang. Ukuran kompleksitas algoritma dalam hal ruang, yaitu seberapa banyak memori yang diperlukan oleh algoritma untuk menyelesaikan masalahnya.</li>
+                <li class="lead">Algoritma brute force. Metode pencarian yang dilakukan dengan cara memeriksa semua kemungkinan nilai yang ada dalam kumpulan data.</li>
+                <li class="lead">Algoritma heuristik. Metode pencarian yang dilakukan dengan cara mencari solusi secara berurutan dan mengambil keputusan yang terbaik di setiap langkahnya.</li>
+            </ol>
+        </div>
+    </section>
+
+
+
+    <script src="boostarp/js/bootstrap.min.js"></script> 
+</body>
+</html>
